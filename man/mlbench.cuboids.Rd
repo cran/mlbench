@@ -21,12 +21,10 @@ mlbench.cuboids(n, relsize=c(2,2,2,1))
 \author{Evgenia Dimitriadou, and Andreas Weingessel}
 
 \examples{
-p_mlbench.cuboids(7000)
+p <- mlbench.cuboids(7000)
 plot(p)
 \dontrun{
 library(xgobi)
 xgobi(p$x,color=c("black","white","red","green")[p$cl])
 }}
-
-
 \keyword{datagen}

@@ -22,9 +22,7 @@ mlbench.cassini(n, relsize=c(2,2,1))
 \author{Evgenia Dimitriadou and Andreas Weingessel}
 
 \examples{
-p_mlbench.cassini(5000)
-plot.mlbench(p)
+p <- mlbench.cassini(5000)
+plot(p)
 }
-
-
 \keyword{datagen}
