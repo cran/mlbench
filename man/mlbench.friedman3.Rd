@@ -2,12 +2,14 @@
 \alias{mlbench.friedman3}
 \title{Benchmark Problem Friedman 3}
 \usage{
-mlbench.friedman3(n, sd=0.2)
+mlbench.friedman3(n, sd=0.1)
 }
 \arguments{
 \item{n}{number of patterns to create}
-\item{sd}{Standard deviation of noise. The default value of 0.2 gives
-a signal to noise ratio of 3:1.}
+\item{sd}{Standard deviation of noise. The default value of 0.1 gives
+a signal to noise ratio (i.e., the ratio of the standard deviations) of
+3:1. Thus, the variance of the function itself (without noise)
+accounts for 90\% of the total variance.}
 }
 \description{
 The regression problem Friedman 3 as described in Friedman (1991) and

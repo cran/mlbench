@@ -28,7 +28,7 @@ mlbench.friedman1 <- function(n, sd=1){
   list(x=x, y=y)
 }
 
-mlbench.friedman2 <- function(n, sd=200){
+mlbench.friedman2 <- function(n, sd=125){
 
   x <- cbind(runif(n,min=0,max=100),
 	     runif(n,min=40*pi,max=560*pi),
@@ -44,7 +44,7 @@ mlbench.friedman2 <- function(n, sd=200){
   list(x=x, y=y)
 }
 
-mlbench.friedman3 <- function(n, sd=0.2){
+mlbench.friedman3 <- function(n, sd=0.1){
 
   x <- cbind(runif(n,min=0,max=100),
 	     runif(n,min=40*pi,max=560*pi),
