@@ -29,8 +29,8 @@
     These data have been taken from the UCI Repository Of Machine Learning
     Databases at
     \itemize{
-    	\item ftp.ics.uci.edu://pub/machine-learning-databases
-    	\item http://www.ics.uci.edu/mlearn/MLRepository.html
+      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
+      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
     and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
 }
