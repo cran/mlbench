@@ -143,7 +143,7 @@ mlbench.threenorm <- function (n, d = 20)
 }
 
 mlbench.waveform <- function (n)
-  {
+{
     Rnuminstances <- n
     retval <- .C("waveform", Rnuminstances = as.integer(Rnuminstances),
                  x= double(21*n), type = integer (n))  
@@ -151,25 +151,25 @@ mlbench.waveform <- function (n)
     retval <- list (x=x, classes=as.factor(retval$type+1))
     class(retval) <- c("mlbench.waveform","mlbench")
     return(retval)
-  }
+}
 
 mlbench.cassini <- function(n,relsize=c(2,2,1))
-  {
-      cassinib <- function(x, a, c)
-      {
-          y <- numeric(2)
-          y[1] <- -sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
-          y[2] <- sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
-          y
-      }
-      
-      circle <- function(x, r)
-          sqrt(r^2-x^2)
-      
-
-    big1_relsize[1]
-    big2_relsize[2]
-    small_relsize[3]
+{
+    cassinib <- function(x, a, c)
+    {
+        y <- numeric(2)
+        y[1] <- -sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
+        y[2] <- sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
+        y
+    }
+    
+    circle <- function(x, r)
+        sqrt(r^2-x^2)
+    
+    
+    big1<-relsize[1]
+    big2<-relsize[2]
+    small<-relsize[3]
     parts<-big1+big2+small
     npiece<-n/parts
     n1<-round(big1*npiece)
@@ -187,52 +187,52 @@ mlbench.cassini <- function(n,relsize=c(2,2,1))
     tmima3<-matrix(0,ncol=2,nrow=n3)
     n1found <- 0
     while(n1found < n1)
-      {
+    {
         x1 <- runif(1,min=-sqrt(a^2+C^2),max=sqrt(a^2+C^2))
         y1 <- runif(1,min=-transl-1,max=-transl+0.6)
         if ((y1 < cassinib(x1,a,C)[2]-transl) &&
             (y1 > cassinib(x1,aell,Cell)[1]-transl))
-          {
+        {
             n1found <- n1found +1
             tmima1[n1found,]<-c(x1,y1)
-          }
-      }
-
+        }
+    }
+    
     n2found <- 0
     while(n2found < n2)
-      {
+    {
         x2 <- runif(1,min=-sqrt(a^2+C^2),max=sqrt(a^2+C^2))
         y2 <- runif(1,max= transl+1,min=transl-0.6)
         if ((y2 > cassinib(x2,a,C)[1]+transl) &&
             (y2 < cassinib(x2,aell,Cell)[2]+transl))
-          {
+        {
             n2found <- n2found +1
             tmima2[n2found,]<-c(x2,y2)
-          }
-      }
+        }
+    }
     
     n3found <- 0
     while(n3found < n3)
-      {
+    {
         x3<-runif(1,min=-r,max=r)
         y3<-runif(1,min=-r,max=r)
         if ((y3 > -circle(x3,r)) &&
             (y3 < circle(x3,r)))
-          {
+        {
             n3found <- n3found +1
             tmima3[n3found,]<-c(x3,y3) 
-          }
-      }
+        }
+    }
     teliko <- rbind(tmima1,tmima2,tmima3)
-    cl <- c(rep(1,n1),rep(2,n2),rep(3,n3))
+    cl <- factor(c(rep(1,n1),rep(2,n2),rep(3,n3)))
     retval<-list(x=teliko,classes=cl)
     class(retval) <- c("mlbench.cassini","mlbench")
     retval
-  }
-    
+}
+
 
 mlbench.cuboids <- function (n, relsize=c(2,2,2,1))
-  {
+{
     big1 <- relsize[1]
     big2 <- relsize[2]
     big3 <- relsize[3]
@@ -254,10 +254,11 @@ mlbench.cuboids <- function (n, relsize=c(2,2,2,1))
     x4 <- cbind(runif(n4,min=0.4,max=0.6),runif(n4,min=0.4,max=0.6),runif(n4,min=0.4,max=0.6))
     
     x<-rbind(x1,x2,x3,x4)
-    retval <-list(x=x,classes=c(rep(1,n1),rep(2,n2),rep(3,n3),rep(4,n4)))
+    retval <-list(x=x,classes=factor(c(rep(1,n1),rep(2,n2),
+                      rep(3,n3),rep(4,n4))))
     class(retval) <- c("mlbench.cuboids","mlbench")
     return(retval)
-  }
+}
 
    
 
@@ -349,10 +350,10 @@ as.data.frame.mlbench <- function(z)
 plot.mlbench <- function(z, xlab="", ylab="", ...)
 {
     if(ncol(z$x)>2){
-        pairs(z$x, col=z$classes, ...)
+        pairs(z$x, col=as.integer(z$classes), ...)
     }
     else{
-        plot(z$x, col=z$classes, xlab=xlab, ylab=ylab, ...)
+        plot(z$x, col=as.integer(z$classes), xlab=xlab, ylab=ylab, ...)
     }
 }        
 
