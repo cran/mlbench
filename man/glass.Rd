@@ -3,6 +3,13 @@
 \title{Glass Identification Database}
 \usage{data(Glass)}
 \keyword{datasets}
+\description{A data frame with 214 observation containing examples of
+  the chemical analysis of 7 different types of glass. The problem is to
+  forecast the type of class on basis of the chemical analysis.  The
+  study of classification of types of glass was motivated by
+  criminological investigation.  At the scene of the crime, the glass left
+  can be used as evidence (if it is correctly identified!).
+}
 \format{
     A data frame with 214 observations on 10 variables:
     \tabular{cll}{

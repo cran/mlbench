@@ -1,5 +1,7 @@
 Package: mlbench
-Version: 0.4-1
+Version: 0.4-3
+Title: Machine Learning Benchmark Problems
+Date: 2000/12/11
 Author: Written/packaged by Fritz Leisch <Friedrich.Leisch@ci.tuwien.ac.at>
         and Evgenia Dimitriadou <E.Dimitriadou@ci.tuwien.ac.at>
 	Original data sets from various sources.

@@ -7,10 +7,13 @@
    This is for the 21-attribute problem.
 
    Requires use of the UNIXSTAT tool named "probdist".
+
+   modified by Friedrich Leisch on 2000/12/11 to use R's random number
+   generator
    ===================================================================== */
 #include <stdio.h>
 #include <math.h>
-#include "S.h"
+#include <R_ext/Random.h>
 
 #define NUMBER_OF_ATTRIBUTES 21
 #define NUMBER_OF_CLASSES 3
@@ -28,8 +31,10 @@ void waveform(int *R_num_instances, double *x, int *type)
 
    num_instances = *R_num_instances;
 
+   GetRNGstate();
    initialize();
    execute(x, type);
+   PutRNGstate();
 }
 
 /* =====================================================================
@@ -87,10 +92,11 @@ void execute(double *x, int *type)
     int num_instance, num_attribute;
     int waveform_type, choice[2];
     double random_attribute_value, multiplier[2];
+
     
     for(num_instance=0; num_instance<num_instances; num_instance++)
     {  /*==== Set up class type ====*/
-	waveform_type = (random() % 3);
+	waveform_type = floor(3*unif_rand());
 	switch (waveform_type)
 	{ case 0: choice[0] = 0; choice[1] = 1; break;
 	case 1: choice[0] = 0; choice[1] = 2; break;
@@ -98,7 +104,7 @@ void execute(double *x, int *type)
 	}
 	
 	/*==== Set up u and (1-u) for this call ====*/
-	multiplier[0] = (double)(random() % 1001)/1000.0;
+	multiplier[0] = 1000 * unif_rand();
 	multiplier[1] = 1.0 - multiplier[0];
 	
 	/*==== Create the instance ====*/

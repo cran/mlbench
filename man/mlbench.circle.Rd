@@ -1,4 +1,5 @@
 \name{mlbench.circle}
+\alias{mlbench.circle}
 \title{Circle in a Square Problem}
 \usage{
 mlbench.circle(n, d=2)
@@ -28,3 +29,4 @@ plot(p)
 p<-mlbench.circle(300,3)
 plot(p)
 }
+\keyword{datagen}

@@ -1,4 +1,5 @@
 \name{mlbench.xor}
+\alias{mlbench.xor}
 \title{Continuous XOR Benchmark Problem}
 \usage{
 mlbench.xor(n, d=2)
@@ -26,3 +27,4 @@ plot(p)
 p<-mlbench.xor(300,3)
 plot(p)
 }
+\keyword{datagen}

@@ -1,4 +1,5 @@
 \name{mlbench.friedman2}
+\alias{mlbench.friedman2}
 \title{Benchmark Problem Friedman 2}
 \usage{
 mlbench.friedman2(n, sd=200)
@@ -32,3 +33,4 @@ Breiman, Leo (1996) Bagging predictors. Machine Learning 24, pages
 Friedman, Jerome H. (1991) Multivariate adaptive regression
 splines. The Annals of Statistics 19 (1), pages 1-67. 
 }
+\keyword{datagen}

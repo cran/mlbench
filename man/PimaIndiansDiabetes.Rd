@@ -3,15 +3,16 @@
 \title{Pima Indians Diabetes Database}
 \usage{data(PimaIndiansDiabetes)}
 \keyword{datasets}
+\description{
+    A data frame with 768 observations on 9 variables.}
 \format{
-    A data frame with 768 observations on 9 variables:
     \tabular{rl}{
    1 \tab Number of times pregnant\cr
    2 \tab Plasma glucose concentration (glucose tolerance test)\cr
    3 \tab Diastolic blood pressure (mm Hg)\cr
    4 \tab Triceps skin fold thickness (mm)\cr
    5 \tab 2-Hour serum insulin (mu U/ml)\cr
-   6 \tab Body mass index (weight in kg/(height in m)^2)\cr
+   6 \tab Body mass index (weight in kg/(height in m)\^2)\cr
    7 \tab Diabetes pedigree function\cr
    8 \tab Age (years)\cr
    9 \tab Class variable (test for diabetes)\cr

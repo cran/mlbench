@@ -1,4 +1,5 @@
 \name{mlbench.waveform}
+\alias{mlbench.waveform}
 \title{Waveform Database Generator (written in C)}
 \usage{
   mlbench.waveform(n)
@@ -30,3 +31,4 @@
   plot(p)
 }
 
+\keyword{datagen}

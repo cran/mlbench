@@ -5,24 +5,24 @@
 \format{A data frame with 20,000 observations on 17 variables, the first
     is a factor with levels A-Z, the remaining 16 are numeric.
 
-    \tabular{cll}{
+    \tabular{rll}{
  [,1] \tab lettr \tab  capital letter\cr
  [,2] \tab x.box \tab  horizontal position of box\cr
- [,3] \tab y.box \tab  vertical position of box\cr      
- [,4] \tab width \tab  width of box\cr             
- [,5] \tab high  \tab  height of box\cr              
- [,6] \tab onpix \tab  total number of on pixels\cr            
- [,7] \tab x.bar \tab  mean x of on pixels in box\cr   
- [,8] \tab y.bar \tab  mean y of on pixels in box\cr    
- [,9] \tab x2bar \tab  mean x variance\cr            
-[,10] \tab y2bar \tab  mean y variance\cr              
-[,11] \tab xybar \tab  mean x y correlation\cr         
-[,12] \tab x2ybr \tab  mean of \eqn{x^2 y} \cr            
-[,13] \tab xy2br \tab  mean of \eqn{x y^2} \cr            
-[,14] \tab x.ege \tab  mean edge count left to right\cr 
-[,15] \tab xegvy \tab  correlation of x.ege with y\cr   
+ [,3] \tab y.box \tab  vertical position of box\cr
+ [,4] \tab width \tab  width of box\cr
+ [,5] \tab high  \tab  height of box\cr
+ [,6] \tab onpix \tab  total number of on pixels\cr
+ [,7] \tab x.bar \tab  mean x of on pixels in box\cr
+ [,8] \tab y.bar \tab  mean y of on pixels in box\cr
+ [,9] \tab x2bar \tab  mean x variance\cr
+[,10] \tab y2bar \tab  mean y variance\cr
+[,11] \tab xybar \tab  mean x y correlation\cr
+[,12] \tab x2ybr \tab  mean of \eqn{x^2 y} \cr
+[,13] \tab xy2br \tab  mean of \eqn{x y^2} \cr
+[,14] \tab x.ege \tab  mean edge count left to right\cr
+[,15] \tab xegvy \tab  correlation of x.ege with y\cr
 [,16] \tab y.ege \tab  mean edge count bottom to top\cr
-[,17] \tab yegvx \tab  correlation of y.ege with x\cr   
+[,17] \tab yegvx \tab  correlation of y.ege with x\cr
     }
 }
 \description{

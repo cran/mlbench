@@ -1,7 +1,10 @@
 \name{mlbench.spirals}
+\alias{mlbench.spirals}
+\alias{mlbench.1spiral}
 \title{Two Spirals Benchmark Problem}
 \usage{
 mlbench.spirals(n, cycles=1, sd=0)
+mlbench.1spiral(n, cycles=1, sd=0)
 }
 \arguments{
     \item{n}{number of patterns to create}
@@ -13,7 +16,8 @@ mlbench.spirals(n, cycles=1, sd=0)
 }
 \description{
     The inputs of the spirals problem are points on two entangled spirals. If
-    \code{sd>0}, then Gaussian noise is added to each data point.
+    \code{sd>0}, then Gaussian noise is added to each data
+    point. \code{mlbench.1spiral} creates a single spiral.
 }
 \examples{
 # 1 cycle each, no noise
@@ -24,3 +28,4 @@ plot(p)
 p<-mlbench.spirals(300,1.5,0.05)
 plot(p)
 }
+\keyword{datagen}

@@ -153,20 +153,20 @@ mlbench.waveform <- function (n)
     return(retval)
   }
 
-cassinib <- function(x, a, c)
-  {
-    y <- numeric(2)
-    y[1] <- -sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
-    y[2] <- sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
-    y
-  }
-
-
-circle <- function(x, r)
-  sqrt(r^2-x^2)
-
 mlbench.cassini <- function(n,relsize=c(2,2,1))
   {
+      cassinib <- function(x, a, c)
+      {
+          y <- numeric(2)
+          y[1] <- -sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
+          y[2] <- sqrt(-c^2  - x^2  + sqrt(a^4  + 4*c^2*x^2))
+          y
+      }
+      
+      circle <- function(x, r)
+          sqrt(r^2-x^2)
+      
+
     big1_relsize[1]
     big2_relsize[2]
     small_relsize[3]

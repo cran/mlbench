@@ -1,4 +1,5 @@
 \name{mlbench.cuboids}
+\alias{mlbench.cuboids}
 \title{Cuboids: A 3 Dimensional Problem}
 \usage{
 mlbench.cuboids(n, relsize=c(2,2,2,1))
@@ -28,3 +29,4 @@ xgobi(p$x,color=c("black","white","red","green")[p$cl])
 }}
 
 
+\keyword{datagen}

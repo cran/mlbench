@@ -1,4 +1,5 @@
 \name{mlbench.twonorm}
+\alias{mlbench.twonorm}
 \title{Twonorm Benchmark Problem}
 \usage{
 mlbench.twonorm(n, d=20)
@@ -27,3 +28,4 @@ mlbench.twonorm(n, d=20)
 p<-mlbench.twonorm(1000, d=2)
 plot(p)
 }
+\keyword{datagen}

@@ -3,9 +3,9 @@
 \title{Los Angeles ozone pollution data, 1976}
 \usage{data(Ozone)}
 \keyword{datasets}
+\description{A data frame with 366 observations on 13 variables, each
+  observation is one day}
 \format{
-    A data frame with 366 observations on 13 variables, each observation
-    is one day:
     \tabular{rl}{
    1 \tab Month: 1 = January, ..., 12 = December\cr
    2 \tab Day of month\cr

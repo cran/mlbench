@@ -24,3 +24,4 @@ p <- mlbench.xor(500,4)
 plot(p)
 }
 
+\keyword{hplot}

@@ -1,4 +1,5 @@
 \name{mlbench.cassini}
+\alias{mlbench.cassini}
 \title{Cassini: A 2 Dimensional Problem}
 \usage{
 mlbench.cassini(n, relsize=c(2,2,1))
@@ -18,7 +19,7 @@ mlbench.cassini(n, relsize=c(2,2,1))
     middle structure (class) is a circle.
 }
 
-\author{Evgenia Dimitriadou, and Andreas Weingessel}
+\author{Evgenia Dimitriadou and Andreas Weingessel}
 
 \examples{
 p_mlbench.cassini(5000)
@@ -26,3 +27,4 @@ plot.mlbench(p)
 }
 
 
+\keyword{datagen}

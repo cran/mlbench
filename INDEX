@@ -1,34 +1,33 @@
-as.data.frame.mlbench    Convert an mlbench object to a dataframe
-bayesclass               Bayes classifier
-BreastCancer		 Wisconsin Breast Cancer Database
-DNA			 Primate splice-junction gene sequences (DNA)
+BostonHousing            Boston Housing Data
+BreastCancer             Wisconsin Breast Cancer Database
+DNA                      Primate splice-junction gene sequences (DNA)
 Glass                    Glass Identification Database
 HouseVotes84             United States Congressional Voting Records 1984
-BostonHousing		 Boston Housing Data
-Ionosphere		 Johns Hopkins University Ionosphere database
+Ionosphere               Johns Hopkins University Ionosphere database
 LetterRecognition        Letter Image Recognition Data
+Ozone                    Los Angeles ozone pollution data, 1976
+PimaIndiansDiabetes      Pima Indians Diabetes Database
+Satellite                Landsat Multi-Spectral Scanner Image Data
+Servo                    Servo Data
+Shuttle                  Shuttle Dataset (Statlog version)
+Sonar                    Sonar, Mines vs. Rocks
+Soybean                  Soybean Database
+Vehicle                  Vehicle Silhouettes
+Vowel                    Vowel Recognition (Deterding data)
+as.data.frame.mlbench    Convert an mlbench object to a dataframe
+bayesclass               Bayes classifier
 mlbench.2dnormals        2-dimensional Gaussian Problem
-mlbench.cassini		 Cassini: A 2-dimensional Problem
+mlbench.cassini          Cassini: A 2 Dimensional Problem
 mlbench.circle           Circle in a Square Problem
-mlbench.cuboids		 Cuboids: A 3-dimensional Problem
+mlbench.cuboids          Cuboids: A 3 Dimensional Problem
 mlbench.friedman1        Benchmark Problem Friedman 1
 mlbench.friedman2        Benchmark Problem Friedman 2
 mlbench.friedman3        Benchmark Problem Friedman 3
-mlbench.peak		 Peak20 Benchmark Problem	
+mlbench.peak             Peak Benchmark Problem
 mlbench.ringnorm         Ringnorm Benchmark Problem
 mlbench.spirals          Two Spirals Benchmark Problem
-mlbench.threenorm	 Threenorm Benchmark Problem
+mlbench.threenorm        Threenorm Benchmark Problem
 mlbench.twonorm          Twonorm Benchmark Problem
 mlbench.waveform         Waveform Database Generator (written in C)
 mlbench.xor              Continuous XOR Benchmark Problem
 plot.mlbench             Plot mlbench objects
-Ozone                    Los Angeles ozone pollution data, 1976
-PimaIndiansDiabetes      Pima Indians Diabetes Database
-Satellite                Landsat Multi-Spectral Scanner Image Data
-Servo			 Servo Data
-Shuttle                  Shuttle Dataset (Statlog version)
-Sonar			 Sonar, Mines vs. Rocks
-Soybean                  Soybean Database
-Vehicle			 Vehicle Silhouettes
-Vowel			 Vowel Recognition (Deterding data)
-

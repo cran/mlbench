@@ -1,4 +1,5 @@
 \name{mlbench.threenorm}
+\alias{mlbench.threenorm}
 \title{Threenorm Benchmark Problem}
 \usage{
 mlbench.threenorm(n, d=20)
@@ -29,3 +30,4 @@ mlbench.threenorm(n, d=20)
 p<-mlbench.threenorm(1000, d=2)
 plot(p)
 }
+\keyword{datagen}

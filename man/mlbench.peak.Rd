@@ -1,4 +1,5 @@
 \name{mlbench.peak}
+\alias{mlbench.peak}
 \title{Peak Benchmark Problem}
 \usage{
 mlbench.peak(n, d=20)
@@ -19,3 +20,4 @@ mlbench.peak(n, d=20)
 \item{y}{output values (dependent variable)}
 }
 
+\keyword{datagen}

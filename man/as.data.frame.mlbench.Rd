@@ -15,3 +15,4 @@ p
 as.data.frame(p) }
 
 
+\keyword{manip}

@@ -1,4 +1,5 @@
 \name{mlbench.2dnormals}
+\alias{mlbench.2dnormals}
 \title{2-dimensional Gaussian Problem}
 \usage{
 mlbench.2dnormals(n, cl=2, r=sqrt(cl), sd=1)
@@ -26,3 +27,4 @@ plot(p)
 p <- mlbench.2dnormals(500,6)
 plot(p)
 }
+\keyword{datagen}

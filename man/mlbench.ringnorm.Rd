@@ -1,4 +1,5 @@
 \name{mlbench.ringnorm}
+\alias{mlbench.ringnorm}
 \title{Ringnorm Benchmark Problem}
 \usage{
 mlbench.ringnorm(n, d=20)
@@ -27,3 +28,4 @@ mlbench.ringnorm(n, d=20)
 p<-mlbench.ringnorm(1000, d=2)
 plot(p)
 }
+\keyword{datagen}

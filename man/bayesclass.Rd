@@ -36,3 +36,4 @@ plot(p)
 plot(p$x, col=bayesclass(p))
 }
 
+\keyword{classif}
