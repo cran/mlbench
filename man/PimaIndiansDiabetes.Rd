@@ -1,7 +1,7 @@
-\name{pima.indians.diabetes}
-\alias{pima.indians.diabetes}
+\name{PimaIndiansDiabetes}
+\alias{PimaIndiansDiabetes}
 \title{Pima Indians Diabetes Database}
-\usage{data(pima.indians.diabetes)}
+\usage{data(PimaIndiansDiabetes)}
 \keyword{datasets}
 \format{
     A data frame with 768 observations on 9 variables:

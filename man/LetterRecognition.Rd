@@ -1,7 +1,7 @@
-\name{letter.recognition}
+\name{LetterRecognition}
 \title{Letter Image Recognition Data}
-\usage{data(letter.recognition)}
-\alias{letter.recognition}
+\usage{data(LetterRecognition)}
+\alias{LetterRecognition}
 \format{A data frame with 20,000 observations on 17 variables, the first
     is a factor with levels A-Z, the remaining 16 are numeric.
 

@@ -4,6 +4,12 @@
 \alias{bayesclass.mlbench.2dnormals}
 \alias{bayesclass.mlbench.circle}
 \alias{bayesclass.mlbench.xor}
+\alias{bayesclass.mlbench.cassini}
+\alias{bayesclass.mlbench.cuboids}
+\alias{bayesclass.mlbench.twonorm}
+\alias{bayesclass.mlbench.threenorm}
+\alias{bayesclass.mlbench.ringnorm}
+
 \title{Bayes classifier}
 \usage{
 bayesclass(z)

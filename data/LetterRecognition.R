@@ -1,10 +1,10 @@
-letter.recognition <-
+LetterRecognition <-
     scan(system(paste("find", paste(.lib.loc, collapse=" "),
-                      "-name letter.recognition.data", sep=" "),
+                      "-name LetterRecognition.data", sep=" "),
                 intern=TRUE)[1])
-letter.recognition <- matrix(letter.recognition,ncol=17,byrow=TRUE)
-letter.recognition <- as.data.frame(letter.recognition)
-colnames(letter.recognition) <- c("lettr",
+LetterRecognition <- matrix(LetterRecognition,ncol=17,byrow=TRUE)
+LetterRecognition <- as.data.frame(LetterRecognition)
+colnames(LetterRecognition) <- c("lettr",
                                   "x.box",
                                   "y.box",
                                   "width",
@@ -22,4 +22,4 @@ colnames(letter.recognition) <- c("lettr",
                                   "y.ege",
                                   "yegvx")
                                     
-levels(letter.recognition$lettr) <- LETTERS
+levels(LetterRecognition$lettr) <- LETTERS

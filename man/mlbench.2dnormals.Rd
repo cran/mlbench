@@ -3,7 +3,6 @@
 \usage{
 mlbench.2dnormals(n, cl=2, r=sqrt(cl), sd=1)
 }
-\alias{bayes.2dnormals}
 \arguments{
     \item{n}{number of patterns to create}
     \item{cl}{number of classes}

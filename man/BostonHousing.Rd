@@ -1,7 +1,7 @@
-\name{housing}
-\alias{housing}
+\name{BostonHousing}
+\alias{BostonHousing}
 \title{Boston Housing Data}
-\usage{data(housing)}
+\usage{data(BostonHousing)}
 }
 \description{Concerns housing values in suburbs of Boston.
 }

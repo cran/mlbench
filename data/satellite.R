@@ -1,10 +1,10 @@
-satellite <-
+Satellite <-
     scan(system(paste("find", paste(.lib.loc, collapse=" "),
-                      "-name satellite.data",sep=" "),
+                      "-name Satellite.data",sep=" "),
                 intern=TRUE)[1])
-satellite <- matrix(satellite,ncol=37,byrow=TRUE)
-satellite <- data.frame(x=satellite[,1:36], classes=factor(satellite[,37]))
-levels(satellite$classes) <- c("red soil",
+Satellite <- matrix(Satellite,ncol=37,byrow=TRUE)
+Satellite <- data.frame(x=Satellite[,1:36], classes=factor(Satellite[,37]))
+levels(Satellite$classes) <- c("red soil",
                                "cotton crop",
                                "grey soil",
                                "damp grey soil",

@@ -1,7 +1,7 @@
-\name{satellite}
+\name{Satellite}
 \title{Landsat Multi-Spectral Scanner Image Data}
-\usage{data(satellite)}
-\alias{satellite}
+\usage{data(Satellite)}
+\alias{Satellite}
 \format{
     A data frame with 36 inputs (\code{x.1 \ldots x.36}) and one target
     (\code{classes}).

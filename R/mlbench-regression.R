@@ -1,4 +1,4 @@
-# Copyright (C) 1997  Friedrich Leisch
+# Copyright (C) 1997  Friedrich Leisch and Evgenia Dimitriadou
 #        
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -59,4 +59,31 @@ mlbench.friedman3 <- function(n, sd=0.2){
 
   list(x=x, y=y)
 }
+
+mlbench.peak <- function(n, d=20)
+  {
+    metro <- numeric(n)
+    y <- numeric(n)
+    x <- matrix(0, nrow=n, ncol=d)
+    for (ndata in 1:n)
+      {
+        radius <- runif(1, min=0, max=3)
+        x[ndata,] <- rnorm(d)
+        metro[ndata] <- sqrt(sum(x[ndata,]^2))
+        x[ndata,] <- radius * (x[ndata,]/metro[ndata])
+        y[ndata] <- 25 * exp(-0.5* radius^2)
+      }
+    list(x=x, y=y)
+  }
+
+
+
+
+
+
+          
+        
+
+
+
 

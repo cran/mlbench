@@ -1,22 +1,21 @@
-\name{glass}
-\alias{glass}
+\name{Glass}
+\alias{Glass}
 \title{Glass Identification Database}
-\usage{data(glass)}
+\usage{data(Glass)}
 \keyword{datasets}
 \format{
-    A data frame with 214 observations on 11 variables:
+    A data frame with 214 observations on 10 variables:
     \tabular{cll}{
- [,1] \tab Number \tab ID number\cr
- [,2] \tab RI \tab refractive index\cr
- [,3] \tab Na \tab Sodium\cr
- [,4] \tab Mg \tab Magnesium\cr
- [,5] \tab Al \tab Aluminum\cr
- [,6] \tab Si \tab Silicon\cr
- [,7] \tab K  \tab Potassium\cr
- [,8] \tab Ca \tab Calcium\cr
- [,9] \tab Ba \tab Barium\cr
-[,10] \tab Fe \tab Iron \cr
-[,11] \tab Type \tab Type of glass (class attribute) \cr 
+ [,1] \tab RI \tab refractive index\cr
+ [,2] \tab Na \tab Sodium\cr
+ [,3] \tab Mg \tab Magnesium\cr
+ [,4] \tab Al \tab Aluminum\cr
+ [,5] \tab Si \tab Silicon\cr
+ [,6] \tab K  \tab Potassium\cr
+ [,7] \tab Ca \tab Calcium\cr
+ [,8] \tab Ba \tab Barium\cr
+ [,9] \tab Fe \tab Iron \cr
+[,10] \tab Type \tab Type of glass (class attribute) \cr 
 }
 }   
 \source{
@@ -36,3 +35,11 @@
     }
     and were converted to R format by Friedrich.Leisch@ci.tuwien.ac.at.
 }
+
+
+
+
+
+
+
+
