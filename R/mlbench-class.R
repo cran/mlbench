@@ -145,8 +145,11 @@ mlbench.threenorm <- function (n, d = 20)
 mlbench.waveform <- function (n)
 {
     Rnuminstances <- n
-    retval <- .C("waveform", Rnuminstances = as.integer(Rnuminstances),
-                 x= double(21*n), type = integer (n))  
+    retval <- .C("waveform",
+                 Rnuminstances = as.integer(Rnuminstances),
+                 x = double(21*n),
+                 type = integer(n),
+                 PACKAGE = "mlbench")
     x <- matrix (retval$x, ncol=21, byrow = TRUE)
     retval <- list (x=x, classes=as.factor(retval$type+1))
     class(retval) <- c("mlbench.waveform","mlbench")
