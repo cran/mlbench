@@ -18,7 +18,7 @@ mlbench.circle(n, d=2)
     This is a 2-class problem: The first class is a \code{d}-dimensional
     ball in the middle of the cube, the remainder forms the second
     class. The size of the ball is chosen such that both classes have equal
-    prior probaility 0.5.
+    prior probability 0.5.
 }
 \examples{
 # 2d example

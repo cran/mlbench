@@ -263,8 +263,32 @@ mlbench.cuboids <- function (n, relsize=c(2,2,2,1))
     return(retval)
 }
 
-   
 
+mlbench.smiley <- function(n=500, sd1=.1, sd2=.05)
+{
+    n1 <- round(n/6)
+    n2 <- round(n/4)
+    n3 <- n - 2 * n1 - n2
+
+    x1 <- cbind(rnorm(n1, -.8, sd1), rnorm(n1, 1, sd1))
+    x2 <- cbind(rnorm(n1,  .8, sd1), rnorm(n1, 1, sd1))
+
+    x3 <- cbind(runif(n2, -.2, .2), runif(n2, 0, .75))
+    x3[,1] <- x3[,1]*(1-x3[,2])
+    
+    x4 <- runif(n3, -1, 1)
+    x4 <- cbind(x4, x4^2 - 1 + rnorm(n3, 0, sd2))
+
+    x <- 
+    retval <- list(x = rbind(x1, x2, x3, x4),
+                   classes=factor(c(rep(1,n1),rep(2,n1),rep(3,n2),rep(4,n3))))
+    class(retval) <- c("mlbench.smiley", "mlbench")
+    retval
+}
+    
+                           
+###**********************************************************
+                           
 
 bayesclass <- function(z) UseMethod("bayesclass")
 
