@@ -24,7 +24,9 @@ mlbench.cuboids(n, relsize=c(2,2,2,1))
 p <- mlbench.cuboids(7000)
 plot(p)
 \dontrun{
-library(xgobi)
-xgobi(p$x,color=c("black","white","red","green")[p$cl])
+library(Rggobi)
+g <- ggobi(p$x)
+g$setColors(p$class)
+g$setMode("2D Tour")
 }}
 \keyword{datagen}
