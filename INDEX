@@ -1,0 +1,18 @@
+as.data.frame.mlbench    Convert an mlbench object to a dataframe
+bayesclass               Bayes classifier
+glass                    Glass Identification Database
+house.votes.84           United States Congressional Voting Records 1984
+housing                  Boston Housing Data
+letter.recognition       Letter Image Recognition Data
+mlbench.2dnormals        2-dimensional Gaussian Problem
+mlbench.circle           Circle in a Square Problem
+mlbench.friedman1        Benchmark Problem Friedman 1
+mlbench.friedman2        Benchmark Problem Friedman 2
+mlbench.friedman3        Benchmark Problem Friedman 3
+mlbench.ringnorm         Ringnorm Benchmark Problem
+mlbench.spirals          Two Spirals Benchmark Problem
+mlbench.xor              Continuous XOR Benchmark Problem
+ozone                    Los Angeles ozone pollution data, 1976
+pima.indians.diabetes    Pima Indians Diabetes Database
+plot.mlbench             Plot mlbench objects
+satellite                Landsat Multi-Spectral Scanner Image Data
