@@ -9,6 +9,7 @@ mlbench.1spiral(n, cycles=1, sd=0)
 \arguments{
     \item{n}{number of patterns to create}
     \item{cycles}{the number of cycles each spiral makes}
+    \item{sd}{standard deviation of data points around the spirals}
 }
 \value{Returns an object of class \code{"mlbench.spirals"} with components
     \item{x}{input values}

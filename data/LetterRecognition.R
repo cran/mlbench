@@ -1,4 +1,4 @@
-LetterRecognition <- scan("LetterRecognition.data")
+LetterRecognition <- scan("LetterRecognition.data",quiet=TRUE)
 LetterRecognition <- matrix(LetterRecognition,ncol=17,byrow=TRUE)
 LetterRecognition <- as.data.frame(LetterRecognition)
 colnames(LetterRecognition) <-

@@ -2,10 +2,10 @@
 \alias{plot.mlbench}
 \title{Plot mlbench objects}
 \usage{
-plot.mlbench(z, xlab="", ylab="", ...)
+plot.mlbench(x, xlab="", ylab="", ...)
 }
 \arguments{
- \item{z}{Object of class \code{"mlbench"}.}
+ \item{x}{Object of class \code{"mlbench"}.}
  \item{xlab}{Label for x-axis.}
  \item{ylab}{Label for y-axis.}
  \item{\dots}{Further plotting options.}

@@ -2,10 +2,11 @@
 \alias{as.data.frame.mlbench}
 \title{Convert an mlbench object to a dataframe}
 \usage{
-as.data.frame.mlbench(z)
+as.data.frame.mlbench(x, row.names=NULL, optional=FALSE)
 }
 \arguments{
- \item{z}{Object of class \code{"mlbench"}.}
+  \item{x}{Object of class \code{"mlbench"}.}
+  \item{row.names,optional}{currently ignored.}
 }
 \description{
     Converts \code{z} (which is basically a list) to a dataframe.  }

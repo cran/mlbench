@@ -341,19 +341,19 @@ bayesclass.mlbench.threenorm <- function (z)
     as.factor(bayesclass)
   }
 
-as.data.frame.mlbench <- function(z)
+as.data.frame.mlbench <- function(x, row.names=NULL, optional=FALSE)
 {
-    data.frame(x=z$x, classes=z$classes)
+    data.frame(x=x$x, classes=x$classes)
 }
 
 
-plot.mlbench <- function(z, xlab="", ylab="", ...)
+plot.mlbench <- function(x, xlab="", ylab="", ...)
 {
-    if(ncol(z$x)>2){
-        pairs(z$x, col=as.integer(z$classes), ...)
+    if(ncol(x$x)>2){
+        pairs(x$x, col=as.integer(x$classes), ...)
     }
     else{
-        plot(z$x, col=as.integer(z$classes), xlab=xlab, ylab=ylab, ...)
+        plot(x$x, col=as.integer(x$classes), xlab=xlab, ylab=ylab, ...)
     }
 }        
 
