@@ -1,7 +1,4 @@
-Satellite <-
-    scan(system(paste("find", paste(.lib.loc, collapse=" "),
-                      "-name Satellite.data",sep=" "),
-                intern=TRUE)[1])
+Satellite <- scan("Satellite.data")
 Satellite <- matrix(Satellite,ncol=37,byrow=TRUE)
 Satellite <- data.frame(x=Satellite[,1:36], classes=factor(Satellite[,37]))
 levels(Satellite$classes) <- c("red soil",
