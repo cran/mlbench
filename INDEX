@@ -2,7 +2,8 @@ BostonHousing           Boston Housing Data
 BreastCancer            Wisconsin Breast Cancer Database
 DNA                     Primate splice-junction gene sequences (DNA)
 Glass                   Glass Identification Database
-HouseVotes84            United States Congressional Voting Records 1984
+HouseVotes84            United States Congressional Voting Records
+                        1984
 Ionosphere              Johns Hopkins University Ionosphere database
 LetterRecognition       Letter Image Recognition Data
 Ozone                   Los Angeles ozone pollution data, 1976

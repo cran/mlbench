@@ -33,7 +33,7 @@ bayesclass(z)
 p <- mlbench.2dnormals(500,6)
 plot(p)
 
-plot(p$x, col=codes(bayesclass(p)))
+plot(p$x, col=as.numeric(bayesclass(p)))
 }
 
 \keyword{classif}

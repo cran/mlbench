@@ -22,6 +22,10 @@
   13 \tab Visibility (miles) measured at LAX\cr
   }
 }
+\details{
+The problem is to predict the daily maximum one-hour-average
+ozone reading (V4).
+}
 \source{
     Leo Breiman, Department of Statistics, UC Berkeley.  Data used in
     Leo Breiman and Jerome H. Friedman (1985), Estimating optimal
