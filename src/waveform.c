@@ -13,6 +13,7 @@
    ===================================================================== */
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 #include <R_ext/Random.h>
 
 #define NUMBER_OF_ATTRIBUTES 21
@@ -104,14 +105,14 @@ void execute(double *x, int *type)
 	}
 	
 	/*==== Set up u and (1-u) for this call ====*/
-	multiplier[0] = 1000 * unif_rand();
+	multiplier[0] = unif_rand();
 	multiplier[1] = 1.0 - multiplier[0];
 	
 	/*==== Create the instance ====*/
 	for(num_attribute=0; num_attribute<NUMBER_OF_ATTRIBUTES;
 	    num_attribute++)
 	{
-	    random_attribute_value = unif_rand();
+	    random_attribute_value = norm_rand();
 	    /*==== Calculate the value ====*/
 	    x[num_instance*NUMBER_OF_ATTRIBUTES + num_attribute] =
 		(multiplier[0] * h[choice[0]][num_attribute]) +

@@ -1,0 +1,9 @@
+Changes in Version 1.0-0
+
+  o New function mlbench.smiley().
+
+  o Version 1.0-0 is not really different from the previous release
+    (version 0.5-10), but we decided that it is stupid to have a
+    version number smaller than 1.0 for a package that is stable and
+    useful.
+

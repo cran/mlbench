@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1496"
+   name=""
+   committed-date="2005-02-23T12:01:01.554812Z"
+   url="svn://svn.ci.tuwien.ac.at/Rpkgs/trunk/mlbench"
+   last-author="leisch"
+   kind="dir"
+   uuid="82024d28-4ff0-0310-8bd4-ba695345edfc"
+   revision="1511"/>
+<entry
+   name="R"
+   kind="dir"/>
+<entry
+   committed-rev="1161"
+   name="DESCRIPTION"
+   text-time="2005-02-17T13:56:58.000000Z"
+   committed-date="2004-02-03T10:53:42.000000Z"
+   checksum="a466cb44bbf6e36fdc14062dfa7c51dd"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:08.000000Z"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="123"
+   name="COPYING"
+   text-time="2005-02-17T13:56:58.000000Z"
+   committed-date="2001-04-18T07:44:49.000000Z"
+   checksum="3f0ba19eb49ecdc78356d0154a967ff8"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:08.000000Z"/>
+<entry
+   name="data"
+   kind="dir"/>
+<entry
+   name="man"
+   kind="dir"/>
+<entry
+   committed-rev="1161"
+   name="NEWS"
+   text-time="2005-02-17T13:56:58.000000Z"
+   committed-date="2004-02-03T10:53:42.000000Z"
+   checksum="9703b208e96bb6f2f53ec0ad60014efc"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:58.000000Z"/>
+<entry
+   committed-rev="127"
+   name="README"
+   text-time="2005-02-17T13:56:58.000000Z"
+   committed-date="2001-04-18T07:51:24.000000Z"
+   checksum="2f1bbc1f8f8fcbfb8fa4be620f77fe84"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:58.000000Z"/>
+</wc-entries>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1496"
+   name=""
+   committed-date="2005-02-23T12:01:01.554812Z"
+   url="svn://svn.ci.tuwien.ac.at/Rpkgs/trunk/mlbench/data"
+   last-author="leisch"
+   kind="dir"
+   uuid="82024d28-4ff0-0310-8bd4-ba695345edfc"
+   revision="1511"/>
+<entry
+   committed-rev="1496"
+   name="Ionosphere.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="299e76d4c55bf87b33033c2bd4b5cb8b"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:39.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Vehicle.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="92a8232b11422ff3cf6d07f439591c8c"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:39.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="HouseVotes84.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="396d5af276b5bfb2f6ffa50ad5d5a910"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:39.000000Z"/>
+<entry
+   committed-rev="361"
+   name="Satellite.R"
+   text-time="2005-02-17T13:56:54.000000Z"
+   committed-date="2001-11-27T13:53:59.000000Z"
+   checksum="97e48603fdaa6742dc4f0cdf3d2bf21c"
+   last-author="hornik"
+   kind="file"
+   prop-time="2005-02-17T13:56:09.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Sonar.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="f3cea3845c3281481cbded71f0fab681"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:40.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Shuttle.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="c598a12bcab5b0a6c0758db9977eaa2b"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:44.000000Z"/>
+<entry
+   committed-rev="123"
+   name="Satellite.data"
+   text-time="2005-02-17T13:56:54.000000Z"
+   committed-date="2001-04-18T07:44:49.000000Z"
+   checksum="1e315befdd60593967dd9881a8d57221"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:29.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Ozone.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="e3170ae1c9942014417b754a56fe3208"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:44.000000Z"/>
+<entry
+   committed-rev="392"
+   name="LetterRecognition.R"
+   text-time="2005-02-17T13:56:54.000000Z"
+   committed-date="2001-12-12T13:49:48.000000Z"
+   checksum="8c6c04af16c326ea4b1bca48b2aed037"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:29.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Vowel.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="9c63e201b037a3572f163a1a0b4729f6"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:45.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="BreastCancer.rda"
+   text-time="2005-02-25T09:19:48.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="a0bfc096f6cf0048db1d5259e5c086d4"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:44.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="PimaIndiansDiabetes.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="72e955ead4eee91fae6a3ff217c2a56b"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:45.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Servo.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="a3cf31dd308d0f398be541e5e2126c69"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:45.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Soybean.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="075a082c3236a50fdad1096f814034fb"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:45.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="BostonHousing.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="842f072ab10822c2b7215df76ad9fb32"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:46.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="DNA.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="6797a3664312477f6fb37cedfb8034b3"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:48.000000Z"/>
+<entry
+   committed-rev="123"
+   name="LetterRecognition.data"
+   text-time="2005-02-17T13:56:55.000000Z"
+   committed-date="2001-04-18T07:44:49.000000Z"
+   checksum="6d7948523f93ca6702f1a3b4e5381765"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-17T13:56:53.000000Z"/>
+<entry
+   committed-rev="1496"
+   name="Glass.rda"
+   text-time="2005-02-25T09:19:49.000000Z"
+   committed-date="2005-02-23T12:01:01.554812Z"
+   checksum="7f74fdf46acf498b11ee7be6e8037c3b"
+   last-author="leisch"
+   kind="file"
+   prop-time="2005-02-25T09:19:48.000000Z"/>
+</wc-entries>
