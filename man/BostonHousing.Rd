@@ -12,7 +12,7 @@
  [,2] \tab zn \tab proportion of residential land zoned for lots over 25,000 sq.ft \cr
  [,3] \tab indus \tab proportion of non-retail business acres per town \cr
  [,4] \tab chas \tab Charles River dummy variable (= 1 if tract bounds river; 0 otherwise) \cr
- [,5] \tab nox \tab nitric oxides concentration (parts per 110 million) \cr
+ [,5] \tab nox \tab nitric oxides concentration (parts per 10 million) \cr
  [,6] \tab rm \tab average number of rooms per dwelling \cr
  [,7] \tab age \tab proportion of owner-occupied units built prior to 1940 \cr
  [,8] \tab dis \tab weighted distances to five Boston employment centres \cr
@@ -20,22 +20,23 @@
 [,10] \tab tax \tab full-value property-tax rate per USD 10,000 \cr
 [,11] \tab ptratio \tab pupil-teacher ratio by town \cr
 [,12] \tab b \tab \eqn{1000(B - 0.63)^2} where \eqn{B} is the proportion of blacks by town\cr
-[,13] \tab lstat \tab lower status of the population \cr
+[,13] \tab lstat \tab percentage of lower status of the population \cr
 [,14] \tab medv \tab median value of owner-occupied homes in USD 1000's
     }
 }
 \source{
-    Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the 
-    demand for clean air', J. Environ. Economics & Management,
-    vol.5, 81-102, 1978.
-    
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Friedrich.Leisch@ci.tuwien.ac.at.
+  Harrison, D. and Rubinfeld, D.L. (1978).
+  Hedonic prices and the demand for clean air.
+  \emph{Journal of Environmental Economics and Management}, \bold{5},
+  81--102.
+  
+  These data have been taken from the UCI Repository Of Machine Learning
+  Databases at
+  \itemize{
+    \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
+    \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
+  }
+  and were converted to R format by Friedrich.Leisch@ci.tuwien.ac.at.
 }
 \keyword{datasets}
 
