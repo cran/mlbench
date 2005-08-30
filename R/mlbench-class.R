@@ -233,7 +233,6 @@ mlbench.cassini <- function(n,relsize=c(2,2,1))
     retval
 }
 
-
 mlbench.cuboids <- function (n, relsize=c(2,2,2,1))
 {
     big1 <- relsize[1]
@@ -286,6 +285,48 @@ mlbench.smiley <- function(n=500, sd1=.1, sd2=.05)
     retval
 }
     
+                           
+mlbench.shapes <- function(n=500)
+{
+    n1 <- round(n/4)
+    n2 <- n-3*n1
+    
+    x1 <- cbind(rnorm(n1, -1, .2), rnorm(n1, 1.5, .2))
+    x2 <- cbind(runif(n1, -1.5, -0.5), runif(n1, -2, 0))
+
+    x3 <- cbind(runif(n1, -1, 1), runif(n1, 1, 2))
+    x3[,1] <- x3[,1]*(2-x3[,2])+1
+    
+    x4 <- runif(n2, 0.5, 2)
+    x4 <- cbind(x4, cos(4*x4)-x4+runif(n2,-.2,.2))
+
+    retval <- list(x = rbind(x1, x2, x3, x4),
+                   classes=factor(c(rep(1,n1),rep(2,n1),rep(3,n1),rep(4,n2))))
+    class(retval) <- c("mlbench.shapes", "mlbench")
+    retval
+}
+
+mlbench.corners <- function(n=800, d=3, sides=rep(1,d), sd=0.1)
+{
+    m <- e1071::bincombinations(d)
+    n1 <- round(n/2^d)
+    
+    sides <- rep(sides, length=d)
+    z <- NULL
+    
+    for(k in 1:nrow(m))
+    {
+        m[k,] <- m[k,]*sides
+        z1 <- matrix(rnorm(d*n1, sd=sd), ncol=d)
+        z1 <- sweep(z1, 2, m[k,], "+")
+        z <- rbind(z, z1)
+    }
+    retval <- list(x=z,
+                   classes=factor(rep(1:nrow(m), rep(n1, nrow(m)))))
+    class(retval) <- c("mlbench.corners", "mlbench")
+    retval
+}
+                     
                            
 ###**********************************************************
                            
