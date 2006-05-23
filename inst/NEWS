@@ -1,3 +1,8 @@
+Changes in Version 1.1-1
+
+  o Add '...' argument to as.data.frame() methods for consistency
+    with R 2.4.0 or later.
+
 Changes in Version 1.1-0
 
   o New artificial classification problems mlbench.shapes() and

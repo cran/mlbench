@@ -409,7 +409,7 @@ bayesclass.mlbench.threenorm <- function (z)
     as.factor(bayesclass)
   }
 
-as.data.frame.mlbench <- function(x, row.names=NULL, optional=FALSE)
+as.data.frame.mlbench <- function(x, row.names=NULL, optional=FALSE, ...)
 {
     data.frame(x=x$x, classes=x$classes)
 }
