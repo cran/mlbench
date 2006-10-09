@@ -40,7 +40,14 @@
     Australian Joint Conference on AI (eds A. Adams and L. Sterling),
     Singapore: World Scientific, 1992 
     2. Quinlan, J.R., "Combining instance-based and model-based
-    learning", Proc. ML'93 (ed P.E. Utgoff), San Mateo: Morgan Kaufmann 1993 
+    learning", Proc. ML'93 (ed P.E. Utgoff), San Mateo: Morgan Kaufmann
+    1993
+
+    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+    UCI Repository of machine learning databases
+    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+    University of California, Department of Information and Computer
+    Science.
 }
 \keyword{datasets}
     

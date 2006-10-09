@@ -49,6 +49,12 @@ data(BostonHousing2)
   Data. \emph{Journal of Environmental Economics and Management}, \bold{31},  
   403--405. [Provided corrections and examined censoring.]
 
+  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of machine learning databases
+  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+  University of California, Department of Information and Computer
+  Science.
+
   Pace, R. Kelley, and O.W. Gilley (1997). Using the Spatial Configuration of  
   the Data to Improve Estimation. \emph{Journal of the Real Estate Finance  
   and Economics}, \bold{14}, 333--340. [Added georeferencing and spatial
@@ -64,7 +70,8 @@ data(BostonHousing2)
   \itemize{
     \item \url{http://lib.stat.cmu.edu/datasets/}
   }
-  Both were converted to R format by Friedrich.Leisch@ci.tuwien.ac.at.
+  See Statlib and references there for details on the corrections.
+  Both were converted to R format by Friedrich Leisch.
 }
 \keyword{datasets}
 

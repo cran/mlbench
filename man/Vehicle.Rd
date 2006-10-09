@@ -65,6 +65,12 @@
 
 \references{
     Turing Institute Research Memorandum TIRM-87-018 "Vehicle
-    Recognition Using Rule Based Methods" by Siebert,JP (March 1987) 
+    Recognition Using Rule Based Methods" by Siebert,JP (March 1987)
+
+    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+    UCI Repository of machine learning databases
+    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+    University of California, Department of Information and Computer
+    Science.
     }
 

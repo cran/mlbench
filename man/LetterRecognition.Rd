@@ -49,7 +49,7 @@
       \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
       \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
-    and were converted to R format by Friedrich.Leisch@ci.tuwien.ac.at.
+    and were converted to R format by Friedrich Leisch.
 }
 \references{
     P. W. Frey and D. J. Slate (Machine Learning Vol 6/2 March 91):
@@ -61,6 +61,12 @@
     integer attributes extracted from raster scan images of the letters.
     The best accuracy obtained was a little over 80\%.  It would be
     interesting to see how well other methods do with the same data.
+
+    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+    UCI Repository of machine learning databases
+    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+    University of California, Department of Information and Computer
+    Science.
 }
 \keyword{datasets}
     

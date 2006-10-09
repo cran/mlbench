@@ -58,6 +58,12 @@
       Ross Quinlan's C4 algorithm attains 94.0\% (no windowing), and that
       IB3 (Aha \& Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
       70\% and 80\% for acceptance and dropping respectively).
+      
+  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of machine learning databases
+  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+  University of California, Department of Information and Computer
+  Science.
 
 }
 \keyword{datasets}

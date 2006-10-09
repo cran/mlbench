@@ -1,7 +1,17 @@
+Changes in Version 1.1-2
+
+  o Converted the 'chas' columns of BostonHousing2 to a factor.
+
+  o Added a corrected version of PimaIndiansDiabetes as PimaIndiansDiabetes2.
+ 
+  o Added correct citation for UCI repository in various places.
+
+
 Changes in Version 1.1-1
 
   o Add '...' argument to as.data.frame() methods for consistency
     with R 2.4.0 or later.
+
 
 Changes in Version 1.1-0
 

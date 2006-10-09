@@ -92,6 +92,12 @@
     International Conference on Machine Learning (pp. 22-28). Ann Arbor,
     Michigan: Morgan Kaufmann.
     -- Notes why this database is highly predictable
+
+    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+    UCI Repository of machine learning databases
+    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+    University of California, Department of Information and Computer
+    Science.    
 }
 \keyword{datasets}
     

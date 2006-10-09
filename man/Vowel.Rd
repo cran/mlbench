@@ -40,6 +40,12 @@
     Steve Renals and Richard Rohwer, "Phoneme Classification Experiments
     Using Radial Basis Functions", Submitted to the International Joint
     Conference on Neural Networks, Washington, 1989.
+
+    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+    UCI Repository of machine learning databases
+    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+    University of California, Department of Information and Computer
+    Science.
 }
 
 

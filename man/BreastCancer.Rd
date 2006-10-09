@@ -72,6 +72,11 @@
          - Using only typical instances: 92.2\% (storing only 23.1 instances)\cr
          - trained on 200 instances, tested on the other 169
 
+  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of machine learning databases
+  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
+  University of California, Department of Information and Computer
+  Science.
 }
 \keyword{datasets}
     
