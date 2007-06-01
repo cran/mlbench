@@ -1,4 +1,6 @@
-LetterRecognition <- scan(gzfile("LetterRecognition.data.gz"),quiet=TRUE)
+LetterRecognition <- scan(con <- gzfile("LetterRecognition.data.gz"),
+                          quiet=TRUE)
+close(con); rm(con)
 LetterRecognition <- matrix(LetterRecognition,ncol=17,byrow=TRUE)
 LetterRecognition <- as.data.frame(LetterRecognition)
 colnames(LetterRecognition) <-
