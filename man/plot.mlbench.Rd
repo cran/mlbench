@@ -2,7 +2,7 @@
 \alias{plot.mlbench}
 \title{Plot mlbench objects}
 \usage{
-plot.mlbench(x, xlab="", ylab="", ...)
+\method{plot}{mlbench}(x, xlab="", ylab="", ...)
 }
 \arguments{
  \item{x}{Object of class \code{"mlbench"}.}

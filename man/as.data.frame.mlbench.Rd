@@ -5,7 +5,7 @@
   Converts \code{x} (which is basically a list) to a dataframe.
 }
 \usage{
-as.data.frame.mlbench(x, row.names=NULL, optional=FALSE, \dots)
+\method{as.data.frame}{mlbench}(x, row.names=NULL, optional=FALSE, \dots)
 }
 \arguments{
   \item{x}{Object of class \code{"mlbench"}.}
