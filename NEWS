@@ -1,3 +1,8 @@
+Changes in Version 1.1-5
+
+  o Fixed Rd byg and renamed README to LICENSE.
+
+
 Changes in Version 1.1-4
 
   o Fixed documentation of S3 objects..

@@ -5,10 +5,10 @@ machine learning methods.
 Most datasets have been taken from the UCI repository at
     ftp://ftp.ics.uci.edu/pub/machine-learning-databases
     http://www.ics.uci.edu/~mlearn/MLRepository.html
-and copyright notices are in the corresponding documentation
+Copyright and license information are in the corresponding documentation
 files. 
 
-Everything else is Copyright (C) 1997-2006 Friedrich Leisch and
+Everything else is Copyright (C) 1997-2009 Friedrich Leisch and
 Evgenia Dimitriadou and released under the GNU General Public License,
 see the file COPYING for details.
 

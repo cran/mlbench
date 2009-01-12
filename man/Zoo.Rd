@@ -6,7 +6,6 @@ data(Zoo)
 }
 \description{A simple dataset containing 17 (mostly logical) variables
   on 101 animals.}
-}
 \format{A data frame with 17 columns: hair, feathers, eggs, milk,
   airborne, aquatic, predator, toothed, backbone, breathes, venomous,
   fins, legs, tail, domestic, catsize, type.
