@@ -1,8 +1,9 @@
 citHeader("To cite package mlbench in publications use:")
 
-desc <- packageDescription("mlbench")
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
-vers <- paste("R package version", desc$Version)
+## R >= 2.8.0 passes package metadata to citation().
+if(!exists("meta") || is.null(meta)) meta <- packageDescription("mlbench")
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
 
 citEntry(entry="Manual",
          title = "mlbench: Machine Learning Benchmark Problems",
