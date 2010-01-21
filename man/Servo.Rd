@@ -33,7 +33,7 @@
       \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
       \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
-    and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
+    and were converted to R format by Evgenia Dimitriadou.
 }
 \references{
     1. Quinlan, J.R., "Learning with continuous classes", Proc. 5th
@@ -50,5 +50,7 @@
     Science.
 }
 \keyword{datasets}
-    
-
+\examples{
+data(Servo)
+summary(Servo)
+}

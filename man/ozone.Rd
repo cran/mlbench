@@ -32,4 +32,7 @@ ozone reading (V4).
     transformations for multiple regression and correlation, JASA, 80, pp.
     580-598.
 }
-    
+\examples{
+data(Ozone)
+summary(Ozone)
+}

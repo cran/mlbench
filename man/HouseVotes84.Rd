@@ -58,4 +58,7 @@
   University of California, Department of Information and Computer
   Science.
 }
-    
+\examples{
+data(HouseVotes84)
+summary(HouseVotes84)
+}

@@ -50,7 +50,7 @@ nominal and a target class.}
     \itemize{
     	\item ftp.stams.strath.ac.uk/pub/Statlog
     	    }
-    and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
+    and were converted to R format by Evgenia Dimitriadou.
 }
 \references{
      machine learning:\cr
@@ -74,4 +74,7 @@ nominal and a target class.}
            Information Processing Systems, volume 4, Morgan Kaufmann.  
 }
 \keyword{datasets}
-    
+\examples{
+data(DNA)
+summary(DNA)
+}

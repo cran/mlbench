@@ -107,3 +107,7 @@
   University of California, Department of Information and Computer
   Science.
 }
+\examples{
+data(Satellite)
+summary(Satellite)
+}

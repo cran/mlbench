@@ -49,10 +49,7 @@
   University of California, Department of Information and Computer
   Science.
 }
-
-
-
-
-
-
-
+\examples{
+data(Glass)
+summary(Glass)
+}

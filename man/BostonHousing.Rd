@@ -74,4 +74,10 @@ data(BostonHousing2)
   Both were converted to R format by Friedrich Leisch.
 }
 \keyword{datasets}
+\examples{
+data(BostonHousing)
+summary(BostonHousing)
 
+data(BostonHousing2)
+summary(BostonHousing2)
+}

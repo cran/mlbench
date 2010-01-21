@@ -1,0 +1,11 @@
+This package contains a collection of real-world datasets and
+functions for creating artificial datasets that work as benchmarks for
+machine learning methods.
+
+Most datasets have been taken from the UCI repository at
+    ftp://ftp.ics.uci.edu/pub/machine-learning-databases
+    http://www.ics.uci.edu/~mlearn/MLRepository.html
+See the corresponding help files for original data sources. 
+
+Some conversions are done for smoother usage in R (like conversions to
+factors), all changes are recorded in file Data-Administration.R.

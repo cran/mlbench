@@ -2,6 +2,21 @@
 ## transformations (if any) that have been applied. All
 ## transformations are indicated in the respective help pages.
 
+###**********************************************************
+
+LetterRecognition <- scan(file="LetterRecognition.data")
+
+LetterRecognition <- matrix(LetterRecognition,ncol=17,byrow=TRUE)
+LetterRecognition <- as.data.frame(LetterRecognition)
+colnames(LetterRecognition) <-
+    c("lettr", "x.box", "y.box", "width", "high", "onpix", "x.bar",
+      "y.bar", "x2bar", "y2bar", "xybar", "x2ybr", "xy2br", "x.ege",
+      "xegvy", "y.ege", "yegvx")
+LetterRecognition$lettr <- factor(LetterRecognition$lettr,
+                                  labels=LETTERS)
+
+save(LetterRecognition, file="data/LetterRecognition.rda")
+
 
 ###**********************************************************
 
@@ -15,6 +30,21 @@ for(n in c("glucose", "pressure","triceps", "insulin",  "mass")){
 }
 
 save(PimaIndiansDiabetes2, file="data/PimaIndiansDiabetes2.rda")
+
+###**********************************************************
+
+Satellite <- scan("Satellite.data")
+
+Satellite <- matrix(Satellite,ncol=37,byrow=TRUE)
+Satellite <- data.frame(x=Satellite[,1:36], classes=factor(Satellite[,37]))
+levels(Satellite$classes) <- c("red soil",
+                               "cotton crop",
+                               "grey soil",
+                               "damp grey soil",
+                               "vegetation stubble",
+                               "very damp grey soil")
+
+save(Satellite, file="data/Satellite.rda")
 
 ###**********************************************************
 
@@ -52,3 +82,12 @@ Zoo[,17] <- factor(Zoo[,17],
 
 save(Zoo, file="Zoo.rda")
 
+###**********************************************************
+
+## change compression type
+
+for(f in list.files("data")){
+    n <- sub(".rda", "", f)
+    load(file.path("data", f))
+    save(list=n, file=f, compress="xz")
+}

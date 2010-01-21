@@ -1,4 +1,15 @@
-Changes in Version 1.1-5
+Changes in Version 2.0-0
+
+  o Changed license of complete package to GPL-2.
+
+  o Recompressed all data sets using xz.
+
+  o Added examples to all help pages.
+
+  o Added info about UCI repository to mlbench.waveform.Rd.
+
+
+Changes in Version 1.1-6
 
   o Improve CITATION.
 

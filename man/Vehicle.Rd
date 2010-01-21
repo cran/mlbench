@@ -60,7 +60,7 @@
       \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
       \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
-    and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
+    and were converted to R format by Evgenia Dimitriadou.
 }
 
 \references{
@@ -74,3 +74,7 @@
     Science.
     }
 
+    \examples{
+data(Vehicle)
+summary(Vehicle)
+}

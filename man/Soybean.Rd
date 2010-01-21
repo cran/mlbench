@@ -77,7 +77,7 @@
       \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
       \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
-    and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
+    and were converted to R format by Evgenia Dimitriadou.
 }
 \references{
     Tan, M., & Eshelman, L. (1988). Using weighted networks to represent
@@ -100,4 +100,7 @@
     Science.    
 }
 \keyword{datasets}
-    
+\examples{
+data(Soybean)
+summary(Soybean)
+}    

@@ -26,7 +26,7 @@
       \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
       \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
     }
-    and were converted to R format by Evgenia.Dimitriadou@ci.tuwien.ac.at.
+    and were converted to R format by Evgenia Dimitriadou.
 }
 
 \references{
@@ -47,6 +47,7 @@
     University of California, Department of Information and Computer
     Science.
 }
-
-
-
+\examples{
+data(Vowel)
+summary(Vowel)
+}

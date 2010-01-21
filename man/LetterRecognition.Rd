@@ -69,4 +69,8 @@
     Science.
 }
 \keyword{datasets}
+\examples{
+data(LetterRecognition)
+summary(LetterRecognition)
+}
     

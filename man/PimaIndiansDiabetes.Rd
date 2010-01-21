@@ -63,5 +63,12 @@
   Wolpert (1995), The Mathematics of Generalization, 331-359,
   Addison-Wesley, Reading, MA.
 }
+\examples{
+  data(PimaIndiansDiabetes)
+  summary(PimaIndiansDiabetes)
+
+  data(PimaIndiansDiabetes2)
+  summary(PimaIndiansDiabetes2)
+}
 
     
