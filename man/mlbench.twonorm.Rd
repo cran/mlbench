@@ -16,7 +16,7 @@ mlbench.twonorm(n, d=20)
     The inputs of the twonorm problem are points from two Gaussian
     distributions with unit covariance matrix. Class 1 is multivariate
     normal with mean \eqn{(a,a,\ldots,a)} and class 2 with mean
-    \eqn{(-a,-a,\ldots,-a)}, \eqn{a=2/d^{-0.5}}. 
+    \eqn{(-a,-a,\ldots,-a)}, \eqn{a=2/d^{0.5}}. 
 
 }
 \references{

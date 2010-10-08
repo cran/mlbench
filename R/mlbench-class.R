@@ -1,3 +1,8 @@
+#
+#  Copyright (C) 1997-2010 Friedrich Leisch
+#  $Id: mlbench-class.R 4612 2010-10-08 09:51:20Z leisch $
+#
+
 mlbench.xor <- function(n, d=2){
 
   x <- matrix(runif(n*d,-1,1),ncol=d,nrow=n)
@@ -306,9 +311,25 @@ mlbench.shapes <- function(n=500)
     retval
 }
 
-mlbench.corners <- function(n=800, d=3, sides=rep(1,d), sd=0.1)
+###**********************************************************
+
+## Original ist bincombinations in e1071
+hypercube <- function(d) {
+
+  retval <- matrix(0, nrow=2^d, ncol=d)
+  
+  for(n in 1:d){
+    retval[,n] <- rep(c(rep(0, (2^d/2^n)), rep(1, (2^d/2^n))),
+                      length=2^d)
+  }
+  retval
+}
+
+
+
+mlbench.hypercube <- function(n=800, d=3, sides=rep(1,d), sd=0.1)
 {
-    m <- e1071::bincombinations(d)
+    m <- hypercube(d)
     n1 <- round(n/2^d)
     
     sides <- rep(sides, length=d)
@@ -323,10 +344,55 @@ mlbench.corners <- function(n=800, d=3, sides=rep(1,d), sd=0.1)
     }
     retval <- list(x=z,
                    classes=factor(rep(1:nrow(m), rep(n1, nrow(m)))))
-    class(retval) <- c("mlbench.corners", "mlbench")
+    class(retval) <- c("mlbench.hypercube", "mlbench")
     retval
 }
-                     
+
+## for backwards compatibility
+mlbench.corners <- function(...) mlbench.hypercube(...)
+
+###**********************************************************
+
+simplex <- function(d, sides, center = TRUE)
+{
+    m <- matrix(0, d+1, d)
+    cent <- rep(0,d)
+
+    m[2,1] <- sides
+    cent[1] <- sides/2
+    b <- sides/2
+
+    if(d>=2)
+    {
+        for(i in 2:d)
+        {
+            m[i+1,] <- cent
+            m[i+1,i] <- sqrt(sides^2-b^2)
+            cent[i] <- 1/(i+1)* m[i+1,i]
+            b <- (1- 1/(i+1)) * m[i+1,i]
+        }
+    }
+    if(center)
+      m <- t(t(m) - cent)
+    m
+}
+
+mlbench.simplex <- function (n = 800, d = 3, sides = 1, sd = 0.1, center=TRUE)
+{
+    m <- simplex(d=d , sides=sides, center=center)
+    n1 <- round(n/2^d)
+    z <- NULL
+    for (k in 1:nrow(m)) {
+        z1 <- matrix(rnorm(d * n1, sd = sd), ncol = d)
+        z1 <- sweep(z1, 2, m[k, ], "+")
+        z <- rbind(z, z1)
+    }
+    retval <- list(x = z, classes = factor(rep(1:nrow(m), rep(n1,
+        nrow(m)))))
+    class(retval) <- c("mlbench.simplex", "mlbench")
+    retval
+}
+
                            
 ###**********************************************************
                            
@@ -363,7 +429,8 @@ bayesclass.mlbench.ringnorm <- function (z)
     a <- 1/sqrt(ndim)
     center1 <- rep(0,ndim)
     center2 <- rep(a,ndim)
-    m1 <- mahalanobis(z, center1, (4*diag(ndim)), inverted=FALSE)
+    m1 <- mahalanobis(z, center1, (4*diag(ndim)), inverted=FALSE) +
+        ndim*log(4)
     m2 <- mahalanobis(z, center2, diag(ndim), inverted=FALSE)
     as.factor ((m1 > m2) +1)
   }
@@ -386,28 +453,31 @@ bayesclass.mlbench.twonorm <- function (z)
     as.factor(bayesclass)
   }
 
-
-bayesclass.mlbench.threenorm <- function (z)
-  {
+## Code by Julia Schiffner
+bayesclass.mlbench.threenorm <- function(z)
+{
     z <- z$x
-    ndata <- dim(z)[1]
-    bayesclass <- integer(ndata)
     ndim <- dim(z)[2]
     a <- 2/sqrt(ndim)
-    center1a <- rep(a,ndim)
-    center1b <- rep(-a,ndim)
+
+    center1a <- rep(a, ndim)
+    center1b <- rep(-a, ndim)
     center2 <- rep(c(a, -a), ndim/2)
-    if ((ndim %% 2)==1)
-      center2 <- c(center2, a)
-    for (i in 1:ndata)
-      {
-        dist1a <- sum((z[i, ] - center1a) ^2)
-        dist1b <- sum((z[i, ] - center1b) ^2)
-        dist2 <- sum((z[i, ] - center2) ^2)
-        bayesclass[i] <- ((dist1a > dist2) && (dist1b > dist2)) +1
-      }
-    as.factor(bayesclass)
-  }
+    
+    if ((ndim%%2) == 1)
+        center2 <- c(center2, a)
+
+    m1 <- 0.5 * exp(-0.5 * mahalanobis(z, center1a, diag(ndim),
+                                       inverted = FALSE)) +
+          0.5 * exp(-0.5 * mahalanobis(z, center1b,
+                                       diag(ndim), inverted = FALSE))
+
+    m2 <- exp(-0.5 * mahalanobis(z, center2, diag(ndim), inverted = FALSE))
+    
+    as.factor((m1 < m2) + 1)
+}
+
+###**********************************************************
 
 as.data.frame.mlbench <- function(x, row.names=NULL, optional=FALSE, ...)
 {

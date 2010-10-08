@@ -1,8 +1,11 @@
-\name{mlbench.corners}
+\name{mlbench.hypercube}
 \alias{mlbench.corners}
+\alias{mlbench.hypercube}
+\alias{hypercube}
 \title{Corners of Hypercube}
 \usage{
-mlbench.corners(n=800, d=3, sides=rep(1,d), sd=0.1)
+mlbench.hypercube(n=800, d=3, sides=rep(1,d), sd=0.1)
+hypercube(d)
 }
 \arguments{
     \item{n}{number of patterns to create}
@@ -11,7 +14,7 @@ mlbench.corners(n=800, d=3, sides=rep(1,d), sd=0.1)
       create a unit hypercube}
     \item{sd}{standard deviation}
 }
-\value{Returns an object of class \code{"mlbench.corners"}  with components
+\value{Returns an object of class \code{"mlbench.hypercube"}  with components
     \item{x}{input values}
     \item{classes}{factor of length \code{n} with target classes} }
 \description{
@@ -21,10 +24,10 @@ mlbench.corners(n=800, d=3, sides=rep(1,d), sd=0.1)
     
 }
 \examples{
-p<-mlbench.corners()
+p <- mlbench.hypercube()
 plot(p)
 
-library("scatterplot3d")
-scatterplot3d(p$x, color=as.numeric(p$classes))
+library("lattice")
+cloud(x.3~x.1+x.2, groups=classes, data=as.data.frame(p))
 }
 \keyword{datagen}

@@ -18,7 +18,7 @@ mlbench.threenorm(n, d=20)
     equal probability from a unit multivariate normal with mean
     \eqn{(a,a,\ldots,a)} and from a unit multivariate normal with mean 
     \eqn{(-a,-a,\ldots,-a)}. Class 2 is drawn from a multivariate normal
-    with mean at \eqn{(a,-a,a, \ldots,-a)}, \eqn{a=2/d^{-0.5}}. 
+    with mean at \eqn{(a,-a,a, \ldots,-a)}, \eqn{a=2/d^{0.5}}. 
 
 }
 \references{

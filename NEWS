@@ -1,3 +1,16 @@
+Changes in Version 2.1-0
+
+  o Removed dependencies on e1071 and scatterplot3d (the latter replaced by 
+    cloud() from lattice). 
+
+  o mlbench.corners() has been renamed to mlbench.hypercube().
+
+  o New function mlbench.simplex() by Manuel Eugster and Sebastian Kaiser.
+
+  o Bugfixes in the bayesclass() methods for ringnorm and threenorm 
+    submitted by Julia Schiffer. 
+
+
 Changes in Version 2.0-0
 
   o Changed license of complete package to GPL-2.
