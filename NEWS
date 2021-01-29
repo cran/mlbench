@@ -1,3 +1,12 @@
+Changes in Version 2.1-2
+
+  o Moved Data-Administration.R to inst/notes
+
+  o fixed NAMESPACE problems
+
+  o added registration of C functions
+
+
 Changes in Version 2.1-1
 
   o Added a NAMESPACE.

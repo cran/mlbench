@@ -1,5 +1,8 @@
 useDynLib(mlbench)
 
+importFrom("graphics", "pairs")
+importFrom("stats", "mahalanobis", "rnorm", "runif")
+
 export(bayesclass)
 exportPattern("^mlbench.*")
 

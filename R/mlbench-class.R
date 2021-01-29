@@ -1,6 +1,6 @@
 #
 #  Copyright (C) 1997-2010 Friedrich Leisch
-#  $Id: mlbench-class.R 4612 2010-10-08 09:51:20Z leisch $
+#  $Id: mlbench-class.R 262 2021-01-29 11:10:37Z leisch $
 #
 
 mlbench.xor <- function(n, d=2){

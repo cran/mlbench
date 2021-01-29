@@ -1,9 +1,8 @@
-f2a9aa569a77ebfe29653e2bf16ec0eb *DESCRIPTION
-6776e69974f0f642d95de03376502981 *Data-Administration.R
-8ee1257469e0ad8511789428c5d466c2 *NAMESPACE
-a7f407e416bcd81e0e2697cfb6eeb714 *NEWS
-0000c717c763ca757f9a2b6bedb67c78 *R/mlbench-class.R
-1bee7ea370a599f2609f58254396e178 *R/mlbench-regression.R
+3f515d5717cee35c61e26281e32c4a70 *DESCRIPTION
+e72aebb01ccf74b82af39ac7a64c139b *NAMESPACE
+67f39c8c0ba9e4864ff117e83304c9ea *NEWS
+c62c328b09658f557be7c5009a99034c *R/mlbench-class.R
+eaf7514960fc5b7ca19991d4b8c911a0 *R/mlbench-regression.R
 4069da5d5f4e156b36697681600a3224 *README
 c47b4e6ddc106f9e2f0450d1b1fc23cb *data/BostonHousing.rda
 25209554a682562de2c0018f673f1584 *data/BostonHousing2.rda
@@ -25,6 +24,7 @@ a6824b09d2afe54c3aebd8594797edd8 *data/Soybean.rda
 4f980bc3c5691f964e72cd20fa56b9fb *data/Vowel.rda
 2a152427c8e223a7bd47395246f829a3 *data/Zoo.rda
 e90f25e177787d2fc29a5a05ac44a009 *inst/CITATION
+6776e69974f0f642d95de03376502981 *inst/notes/Data-Administration.R
 59dbb880b61f993c3cbb4ec427d36ed7 *man/BostonHousing.Rd
 9b97c1fded837b56696de3b4d82c81cc *man/BreastCancer.Rd
 bf5315d9df64f445e8cab7aa58043d4d *man/DNA.Rd
@@ -63,4 +63,5 @@ dae712045090b90ae7ba5f4ed4dadaf3 *man/mlbench.smiley.Rd
 7d899328b07839fd51caf4bc635d67bb *man/mlbench.waveform.Rd
 3f946079c1693b5fc45a6af3e7df9032 *man/mlbench.xor.Rd
 ab08b35363d5fa1dc40b68c91d68888e *man/plot.mlbench.Rd
+475b8708983376f34dba0a9309ef89db *src/init.c
 97c51b84051dd25177fd0ca9437826ee *src/waveform.c
