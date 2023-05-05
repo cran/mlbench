@@ -28,7 +28,7 @@ double h[NUMBER_OF_CLASSES][NUMBER_OF_ATTRIBUTES];
 void waveform(int *R_num_instances, double *x, int *type)
 {
    void execute(double *x, int *type);
-   void initialize();
+   void initialize(void);
 
    num_instances = *R_num_instances;
 
@@ -41,7 +41,7 @@ void waveform(int *R_num_instances, double *x, int *type)
 /* =====================================================================
    Initializes the algorithm.
    ==================================================================== */
-void initialize()
+void initialize(void)
 {
    int i,j;
 

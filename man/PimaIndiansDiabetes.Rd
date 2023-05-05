@@ -16,7 +16,7 @@
       pressure \tab Diastolic blood pressure (mm Hg)\cr
       triceps \tab Triceps skin fold thickness (mm)\cr
       insulin \tab 2-Hour serum insulin (mu U/ml)\cr
-      mass \tab Body mass index (weight in kg/(height in m)\^2)\cr
+      mass \tab Body mass index (weight in kg/(height in m)^2)\cr
       pedigree \tab Diabetes pedigree function\cr
       age \tab Age (years)\cr
       diabetes \tab Class variable (test for diabetes)\cr

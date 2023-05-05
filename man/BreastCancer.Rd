@@ -45,7 +45,7 @@
     and were converted to R format by Evgenia Dimitriadou.
 }
 \references{   
-   1. Wolberg,W.H., \& Mangasarian,O.L. (1990). Multisurface method of 
+   1. Wolberg,W.H., & Mangasarian,O.L. (1990). Multisurface method of 
       pattern separation for medical diagnosis applied to breast cytology. In
       Proceedings of the National Academy of Sciences, 87,
       9193-9196.\cr

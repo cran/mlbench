@@ -35,7 +35,7 @@
     and were converted to R format by Evgenia Dimitriadou.
 }
 \references{
-   Sigillito, V. G., Wing, S. P., Hutton, L. V., \& Baker, K. B. (1989).
+   Sigillito, V. G., Wing, S. P., Hutton, L. V., & Baker, K. B. (1989).
       Classification of radar returns from the ionosphere using neural 
       networks. Johns Hopkins APL Technical Digest, 10, 262-266.
 
@@ -56,7 +56,7 @@
       David Aha (aha@ics.uci.edu) briefly investigated this database.
       He found that nearest neighbor attains an accuracy of 92.1\%, that
       Ross Quinlan's C4 algorithm attains 94.0\% (no windowing), and that
-      IB3 (Aha \& Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
+      IB3 (Aha & Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
       70\% and 80\% for acceptance and dropping respectively).
       
   Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
