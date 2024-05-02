@@ -1,6 +1,8 @@
 \name{DNA}
 \title{Primate splice-junction gene sequences (DNA)} 
-\usage{data(DNA)}
+\usage{
+data("DNA", package = "mlbench")
+}
 \alias{DNA}
 \format{A data frame with 3,186 observations on 180 variables, all
 nominal and a target class.}
@@ -75,6 +77,6 @@ nominal and a target class.}
 }
 \keyword{datasets}
 \examples{
-data(DNA)
+data("DNA", package = "mlbench")
 summary(DNA)
 }

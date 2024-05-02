@@ -1,6 +1,8 @@
 \name{BreastCancer}
 \title{Wisconsin Breast Cancer Database}
-\usage{data(BreastCancer)}
+\usage{
+data("BreastCancer", package = "mlbench")
+}
 \alias{BreastCancer}
 \format{A data frame with 699 observations on 11 variables, one being a
     character variable, 9 being ordered or nominal, and 1 target class.
@@ -35,17 +37,18 @@
 	Wisconsin Hospital ;Madison; Wisconsin; USA 
         \item Donor: Olvi Mangasarian (mangasarian@cs.wisc.edu)
 	\item Received: David W. Aha (aha@cs.jhu.edu)
-    }
+      }
+
     These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-     }
-    and were converted to R format by Evgenia Dimitriadou.
+    Databases (Blake & Merz 1998) and were converted to R format by
+    Evgenia Dimitriadou in the late 1990s.
+
+    The current version of the UC Irvine Machine Learning Repository
+    Breast Cancer Wisconsin (Original) data set is available from
+    \doi{10.24432/C5HP4Z}.
 }
 \references{   
-   1. Wolberg,W.H., & Mangasarian,O.L. (1990). Multisurface method of 
+   1. Wolberg,W.H., and Mangasarian,O.L. (1990). Multisurface method of 
       pattern separation for medical diagnosis applied to breast cytology. In
       Proceedings of the National Academy of Sciences, 87,
       9193-9196.\cr
@@ -72,15 +75,15 @@
          - Using only typical instances: 92.2\% (storing only 23.1 instances)\cr
          - trained on 200 instances, tested on the other 169
 
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
   Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 }
 \keyword{datasets}
 \examples{
-data(BreastCancer)
+data("BreastCancer", package = "mlbench")
 summary(BreastCancer)
 }
     

@@ -1,7 +1,9 @@
 \name{Ozone}
 \alias{Ozone}
 \title{Los Angeles ozone pollution data, 1976}
-\usage{data(Ozone)}
+\usage{
+data("Ozone", package = "mlbench")
+}
 \keyword{datasets}
 \description{A data frame with 366 observations on 13 variables, each
   observation is one day}
@@ -33,6 +35,6 @@ ozone reading (V4).
     580-598.
 }
 \examples{
-data(Ozone)
+data("Ozone", package = "mlbench")
 summary(Ozone)
 }

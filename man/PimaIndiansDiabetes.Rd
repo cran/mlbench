@@ -3,8 +3,8 @@
 \alias{PimaIndiansDiabetes2}
 \title{Pima Indians Diabetes Database}
 \usage{
-  data(PimaIndiansDiabetes)
-  data(PimaIndiansDiabetes2)
+data("PimaIndiansDiabetes", package = "mlbench")
+data("PimaIndiansDiabetes2", package = "mlbench")
 }
 \keyword{datasets}
 \description{
@@ -16,7 +16,7 @@
       pressure \tab Diastolic blood pressure (mm Hg)\cr
       triceps \tab Triceps skin fold thickness (mm)\cr
       insulin \tab 2-Hour serum insulin (mu U/ml)\cr
-      mass \tab Body mass index (weight in kg/(height in m)^2)\cr
+      mass \tab Body mass index\cr
       pedigree \tab Diabetes pedigree function\cr
       age \tab Age (years)\cr
       diabetes \tab Class variable (test for diabetes)\cr
@@ -40,19 +40,18 @@
   }
     
   These data have been taken from the UCI Repository Of Machine Learning
-  Databases at
-  \itemize{
-    \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-    \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-  }
-  and were converted to R format by Friedrich Leisch.
+  Databases (Blake & Merz 1998) and were converted to R format by
+  Friedrich Leisch in the late 1990s.
+
+  The data no longer seems to be available from the UC Irvine Machine
+  Learning Repository (now at \url{https://archive.ics.uci.edu/}).
 }
 \references{
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
   Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 
   Brian D. Ripley (1996), Pattern Recognition and Neural Networks,
   Cambridge University Press, Cambridge.
@@ -64,11 +63,11 @@
   Addison-Wesley, Reading, MA.
 }
 \examples{
-  data(PimaIndiansDiabetes)
-  summary(PimaIndiansDiabetes)
+data("PimaIndiansDiabetes", package = "mlbench")
+summary(PimaIndiansDiabetes)
 
-  data(PimaIndiansDiabetes2)
-  summary(PimaIndiansDiabetes2)
+data("PimaIndiansDiabetes2", package = "mlbench")
+summary(PimaIndiansDiabetes2)
 }
 
     

@@ -1,6 +1,8 @@
 \name{Sonar}
 \title{Sonar, Mines vs. Rocks}
-\usage{data(Sonar)}
+\usage{
+data("Sonar", package = "mlbench")
+}
 \alias{Sonar}
 \format{A data frame with 208 observations on 61 variables, all numerical and one (the Class) nominal.}
 
@@ -23,37 +25,37 @@
 }
 
 \source{
-    \itemize{
-       	\item Contribution: Terry Sejnowski, Salk Institute and
-	University of California, San Deigo.
-	\item Development: R. Paul Gorman, Allied-Signal Aerospace
-	Technology Center. 
-	\item Maintainer: Scott E. Fahlman 
-	
-    }
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Evgenia Dimitriadou.
+  \itemize{
+    \item Contribution: Terry Sejnowski, Salk Institute and
+    University of California, San Deigo.
+    \item Development: R. Paul Gorman, Allied-Signal Aerospace
+    Technology Center. 
+    \item Maintainer: Scott E. Fahlman 
+  }
+  
+  These data have been taken from the UCI Repository Of Machine Learning
+  Databases (Blake & Merz 1998) and were converted to R format by
+  Evgenia Dimitriadou in the late 1990s.
+
+  The current version of the UC Irvine Machine Learning Repository
+  Connectionist Bench Sonar, Mines vs. Rocks data set is available from
+  \doi{10.24432/C5T01Q}.  
 }
 
 \references{
   Gorman, R. P., and Sejnowski, T. J. (1988). "Analysis of Hidden
   Units in a Layered Network Trained to Classify Sonar Targets" in
   Neural Networks, Vol. 1, pp. 75-89.
-
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
+ 
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
   Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.  
 }
 \keyword{datasets}
 \examples{
-data(Sonar)
+data("Sonar", package = "mlbench")
 summary(Sonar)
 }
     

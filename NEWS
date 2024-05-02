@@ -1,3 +1,11 @@
+Changes in Version 2.1-5
+
+  o Clarify source information: the old UCI URLs no longer work.
+
+Changes in Version 2.1-4
+
+  o fixed warnings in waveform.c
+
 Changes in Version 2.1-2
 
   o Moved Data-Administration.R to inst/notes

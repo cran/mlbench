@@ -1,7 +1,9 @@
 \name{Vowel}
 \alias{Vowel}
 \title{Vowel Recognition (Deterding data)}
-\usage{data(Vowel)}
+\usage{
+data("Vowel", package = "mlbench")
+}
 \keyword{datasets}
 \format{
     A data frame with 990 observations on 10 independent variables, one
@@ -15,18 +17,18 @@
     hAd, hYd, had, hOd, hod, hUd, hud, hed. 
 }
 \source{
-    \itemize{
-	\item Creator: Tony Robinson 
-	\item Maintainer: Scott E. Fahlman, CMU
-    }
+  \itemize{
+    \item Creator: Tony Robinson 
+    \item Maintainer: Scott E. Fahlman, CMU
+  }
     
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Evgenia Dimitriadou.
+  These data have been taken from the UCI Repository Of Machine Learning
+  Databases (Blake & Merz 1998) and were converted to R format by
+  Evgenia Dimitriadou in the late 1990s.
+
+  The current version of the UC Irvine Machine Learning Repository
+  Connectionist Bench Vowel Recognition Deterding Data data set is
+  available from \doi{10.24432/C58P4S}. 
 }
 
 \references{
@@ -41,13 +43,13 @@
     Using Radial Basis Functions", Submitted to the International Joint
     Conference on Neural Networks, Washington, 1989.
 
-    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-    UCI Repository of machine learning databases
-    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-    University of California, Department of Information and Computer
-    Science.
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
+  Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 }
 \examples{
-data(Vowel)
+data("Vowel", package = "mlbench")
 summary(Vowel)
 }

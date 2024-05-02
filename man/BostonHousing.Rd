@@ -3,8 +3,8 @@
 \alias{BostonHousing2}
 \title{Boston Housing Data}
 \usage{
-data(BostonHousing)
-data(BostonHousing2)
+data("BostonHousing", package = "mlbench")
+data("BostonHousing2", package = "mlbench")
 }
 \description{Housing data for 506 census tracts of Boston from the 1970
   census. The dataframe
@@ -49,11 +49,11 @@ data(BostonHousing2)
   Data. \emph{Journal of Environmental Economics and Management}, \bold{31},  
   403--405. [Provided corrections and examined censoring.]
 
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
   Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 
   Pace, R. Kelley, and O.W. Gilley (1997). Using the Spatial Configuration of  
   the Data to Improve Estimation. \emph{Journal of the Real Estate Finance  
@@ -61,23 +61,20 @@ data(BostonHousing2)
   estimation.]
 }  
 \source{
-  The original data have been taken from the UCI Repository Of Machine Learning
-  Databases at
-  \itemize{
-    \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html},
-  }
-  the corrected data have been taken from Statlib at
-  \itemize{
-    \item \url{http://lib.stat.cmu.edu/datasets/}
-  }
+  The original data were taken from the UCI Repository Of Machine
+  Learning Databases (Blake & Merz 1998) and no longer seem to be
+  available from the UC Irvine Machine Learning Repository (now at
+  \url{https://archive.ics.uci.edu/}). 
+  The corrected data were taken from Statlib at
+  \url{http://lib.stat.cmu.edu/datasets/}.
   See Statlib and references there for details on the corrections.
   Both were converted to R format by Friedrich Leisch.
 }
 \keyword{datasets}
 \examples{
-data(BostonHousing)
+data("BostonHousing", package = "mlbench")
 summary(BostonHousing)
 
-data(BostonHousing2)
+data("BostonHousing2", package = "mlbench")
 summary(BostonHousing2)
 }

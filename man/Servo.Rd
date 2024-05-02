@@ -1,6 +1,8 @@
 \name{Servo}
 \title{Servo Data}
-\usage{data(Servo)}
+\usage{
+data("Servo", package = "mlbench")
+}
 \alias{Servo}
 \format{A data frame with 167 observations on 5 variables, 4 nominal and
     1 as the target class.}
@@ -23,17 +25,17 @@
     }
 }
 \source{
-    \itemize{
-       	\item Creator: Karl Ulrich (MIT) in 1986
-	\item Donor: Ross Quinlan 
-    }
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Evgenia Dimitriadou.
+  \itemize{
+    \item Creator: Karl Ulrich (MIT) in 1986
+    \item Donor: Ross Quinlan 
+  }
+      
+  These data have been taken from the UCI Repository Of Machine Learning
+  Databases (Blake & Merz 1998) and were converted to R format by
+  Evgenia Dimitriadou in the late 1990s.
+
+  The current version of the UC Irvine Machine Learning Repository Servo
+  data set is available from \doi{10.24432/C5Q30F}.
 }
 \references{
     1. Quinlan, J.R., "Learning with continuous classes", Proc. 5th
@@ -43,14 +45,14 @@
     learning", Proc. ML'93 (ed P.E. Utgoff), San Mateo: Morgan Kaufmann
     1993
 
-    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-    UCI Repository of machine learning databases
-    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-    University of California, Department of Information and Computer
-    Science.
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
+  Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 }
 \keyword{datasets}
 \examples{
-data(Servo)
+data("Servo", package = "mlbench")
 summary(Servo)
 }

@@ -1,6 +1,8 @@
 \name{Ionosphere}
 \title{Johns Hopkins University Ionosphere database}
-\usage{data(Ionosphere)}
+\usage{
+data("Ionosphere", package = "mlbench")
+}
 \alias{Ionosphere}
 \format{A data frame with 351 observations on 35 independent variables, some 
     numerical and 2 nominal, and one last defining the class.}
@@ -26,16 +28,15 @@
 	Johns Hopkins University; Johns Hopkins Road; Laurel; MD 20723 
         \item Donor: Vince Sigillito (vgs@aplcen.apl.jhu.edu)
     }
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Evgenia Dimitriadou.
+    These data have been taken from the UCI Repository Of Machine
+    Learning Databases (Blake & Merz 1998) and were converted to R
+    format by Evgenia Dimitriadou in the late 1990s.
+
+    The current version of the UC Irvine Machine Learning Repository
+    Ionosphere data set is available from \doi{10.24432/C5W01B}.
 }
 \references{
-   Sigillito, V. G., Wing, S. P., Hutton, L. V., & Baker, K. B. (1989).
+   Sigillito, V. G., Wing, S. P., Hutton, L. V., and Baker, K. B. (1989).
       Classification of radar returns from the ionosphere using neural 
       networks. Johns Hopkins APL Technical Digest, 10, 262-266.
 
@@ -56,19 +57,18 @@
       David Aha (aha@ics.uci.edu) briefly investigated this database.
       He found that nearest neighbor attains an accuracy of 92.1\%, that
       Ross Quinlan's C4 algorithm attains 94.0\% (no windowing), and that
-      IB3 (Aha & Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
+      IB3 (Aha and Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
       70\% and 80\% for acceptance and dropping respectively).
-      
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
-  Science.
 
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
+  Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.      
 }
 \keyword{datasets}
 \examples{
-data(Ionosphere)
+data("Ionosphere", package = "mlbench")
 summary(Ionosphere)
 }
     

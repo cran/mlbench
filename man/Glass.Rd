@@ -1,7 +1,9 @@
 \name{Glass}
 \alias{Glass}
 \title{Glass Identification Database}
-\usage{data(Glass)}
+\usage{
+data("Glass", package = "mlbench")
+}
 \keyword{datasets}
 \description{A data frame with 214 observation containing examples of
   the chemical analysis of 7 different types of glass. The problem is to
@@ -34,22 +36,22 @@
 	Corporation
     }
     
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Friedrich Leisch.
+    These data have been taken from the UCI Repository Of Machine
+    Learning Databases (Blake & Merz 1998) and were converted to R
+    format by Friedrich Leisch in the late 1990s.
+
+    The current version of the UC Irvine Machine Learning Repository
+    Glass Identification data set is available from
+    \doi{10.24432/C5WW2P}.
 }
-\references{  
-  Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of machine learning databases
-  [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-  University of California, Department of Information and Computer
+\references{
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
   Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 }
 \examples{
-data(Glass)
+data("Glass", package = "mlbench")
 summary(Glass)
 }

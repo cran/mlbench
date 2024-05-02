@@ -1,6 +1,8 @@
 \name{LetterRecognition}
 \title{Letter Image Recognition Data}
-\usage{data(LetterRecognition)}
+\usage{
+data("LetterRecognition", package = "mlbench")
+}
 \alias{LetterRecognition}
 \format{A data frame with 20,000 observations on 17 variables, the first
     is a factor with levels A-Z, the remaining 16 are numeric.
@@ -43,13 +45,12 @@
      	\item Odesta Corporation; 1890 Maple Ave; Suite 115; Evanston, IL 60201
    	\item Donor: David J. Slate (dave@math.nwu.edu) (708) 491-3867   
     }
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Friedrich Leisch.
+    These data have been taken from the UCI Repository Of Machine
+    Learning Databases (Blake & Merz 1998) and were converted to R
+    format by Friedrich Leisch in the late 1990s.
+
+    The current version of the UC Irvine Machine Learning Repository
+    Letter Recognition data set is available from \doi{10.24432/C5ZP40}.
 }
 \references{
     P. W. Frey and D. J. Slate (Machine Learning Vol 6/2 March 91):
@@ -62,15 +63,15 @@
     The best accuracy obtained was a little over 80\%.  It would be
     interesting to see how well other methods do with the same data.
 
-    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-    UCI Repository of machine learning databases
-    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-    University of California, Department of Information and Computer
-    Science.
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
+  Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
 }
 \keyword{datasets}
 \examples{
-data(LetterRecognition)
+data("LetterRecognition", package = "mlbench")
 summary(LetterRecognition)
 }
     

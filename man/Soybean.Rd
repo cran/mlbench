@@ -1,6 +1,8 @@
 \name{Soybean}
 \title{Soybean Database}
-\usage{data(Soybean)}
+\usage{
+data("Soybean", package = "mlbench")
+}
 \alias{Soybean}
 \format{A data frame with 683 observations on 36 variables. There are 35
     categorical attributes, all numerical and a nominal denoting the
@@ -62,22 +64,23 @@
     ``1,'' and so forth. 
   }
 \source{
-    \itemize{
-       	\item Source: R.S. Michalski and R.L. Chilausky "Learning by
-	Being Told and Learning from Examples: An Experimental
-	Comparison of the Two Methods of Knowledge Acquisition in the
-	Context of Developing an Expert System for Soybean Disease
-	Diagnosis", International Journal of Policy Analysis and
-	Information Systems, Vol. 4, No. 2, 1980.
-        \item Donor: Ming Tan & Jeff Schlimmer (Jeff.Schlimmer\%cs.cmu.edu)
-    }
-    These data have been taken from the UCI Repository Of Machine Learning
-    Databases at
-    \itemize{
-      \item \url{ftp://ftp.ics.uci.edu/pub/machine-learning-databases}
-      \item \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
-    }
-    and were converted to R format by Evgenia Dimitriadou.
+  \itemize{
+    \item Source: R.S. Michalski and R.L. Chilausky "Learning by
+    Being Told and Learning from Examples: An Experimental
+    Comparison of the Two Methods of Knowledge Acquisition in the
+    Context of Developing an Expert System for Soybean Disease
+    Diagnosis", International Journal of Policy Analysis and
+    Information Systems, Vol. 4, No. 2, 1980.
+    \item Donor: Ming Tan & Jeff Schlimmer (Jeff.Schlimmer\%cs.cmu.edu)
+  }
+
+  These data have been taken from the UCI Repository Of Machine Learning
+  Databases (Blake & Merz 1998) and were converted to R format by
+  Evgenia Dimitriadou in the late 1990s.
+
+  The current version of the UC Irvine Machine Learning Repository
+  Soybean (Large) data set is available from \doi{10.24432/C5JG6Z}. 
+
 }
 \references{
     Tan, M., & Eshelman, L. (1988). Using weighted networks to represent
@@ -93,14 +96,14 @@
     Michigan: Morgan Kaufmann.
     -- Notes why this database is highly predictable
 
-    Newman, D.J. & Hettich, S. & Blake, C.L. & Merz, C.J. (1998).
-    UCI Repository of machine learning databases
-    [http://www.ics.uci.edu/~mlearn/MLRepository.html]. Irvine, CA:
-    University of California, Department of Information and Computer
-    Science.    
+  Blake, C.L. & Merz, C.J. (1998).
+  UCI Repository of Machine Learning Databases. Irvine, CA:
+  University of California, Irvine, Department of Information and Computer
+  Science.
+  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.    
 }
 \keyword{datasets}
 \examples{
-data(Soybean)
+data("Soybean", package = "mlbench")
 summary(Soybean)
 }    
