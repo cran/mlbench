@@ -66,7 +66,7 @@ data("BostonHousing2", package = "mlbench")
   available from the UC Irvine Machine Learning Repository (now at
   \url{https://archive.ics.uci.edu/}). 
   The corrected data were taken from Statlib at
-  \url{http://lib.stat.cmu.edu/datasets/}.
+  \url{https://lib.stat.cmu.edu/datasets/}.
   See Statlib and references there for details on the corrections.
   Both were converted to R format by Friedrich Leisch.
 }

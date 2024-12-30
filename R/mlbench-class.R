@@ -9,7 +9,7 @@ mlbench.xor <- function(n, d=2){
   if((d != as.integer(d)) || (d<2))
     stop("d must be an integer >=2")
 
-  z <- rep(0, length=n)
+  z <- rep_len(0, n)
   for(k in 1:n){
     if(x[k,1]>=0){
       tmp <- (x[k,2:d] >=0)
@@ -32,7 +32,7 @@ mlbench.circle <- function(n, d=2){
   if((d != as.integer(d)) || (d<2))
     stop("d must be an integer >=2")
 
-  z <- rep(1, length=n)
+  z <- rep_len(1, n)
 
   r <- (2^(d-1) * gamma(1+d/2) / (pi^(d/2)))^(1/d)
   z[apply(x, 1, function(x) sum(x^2)) > r^2] <- 2
@@ -56,7 +56,7 @@ mlbench.2dnormals <- function(n, cl=2, r=sqrt(cl), sd=1){
 
 mlbench.1spiral <- function(n, cycles=1, sd=0)
 {
-    w <- seq(0, by=cycles/n, length=n)
+    w <- seq(0, by=cycles/n, length.out=n)
     x <- matrix(0, nrow=n, ncol=2)
 
     x[,1] <- (2*w+1)*cos(2*pi*w)/3;
@@ -79,7 +79,7 @@ mlbench.spirals <- function(n, cycles=1, sd=0)
 {
     x <-  matrix(0, nrow=n, ncol=2)
     c2 <- sample(1:n, size=n/2, replace=FALSE)
-    cl <- factor(rep(1, length=n), levels=as.character(1:2))
+    cl <- factor(rep_len(1, n), levels=as.character(1:2))
     cl[c2] <- 2
 
     x[-c2,] <- mlbench.1spiral(n=n-length(c2), cycles=cycles, sd=sd)
@@ -94,7 +94,7 @@ mlbench.ringnorm <- function(n, d=20)
 {
     x <-  matrix(0, nrow=n, ncol=d)
     c2 <- sample(1:n, size=n/2, replace=FALSE)
-    cl <- factor(rep(1, length=n), levels=as.character(1:2))
+    cl <- factor(rep_len(1, n), levels=as.character(1:2))
     cl[c2] <- 2
 
     a <- 1/sqrt(d)
@@ -110,7 +110,7 @@ mlbench.twonorm <- function (n, d = 20)
 {
     x <- matrix(0, nrow = n, ncol = d)
     c2 <- sample(1:n, size = n/2, replace = FALSE)
-    cl <- factor(rep(1, length = n), levels = as.character(1:2))
+    cl <- factor(rep_len(1, n), levels = as.character(1:2))
     cl[c2] <- 2
     a <- 2/sqrt(d)
     x[-c2, ] <- matrix(rnorm(n = d * (n - length(c2)), mean = a, sd = 1), 
@@ -125,7 +125,7 @@ mlbench.threenorm <- function (n, d = 20)
 {
     x <- matrix(0, nrow = n, ncol = d)
     c2 <- sample(1:n, size = n/2, replace = FALSE)
-    cl <- factor(rep(1, length = n), levels = as.character(1:2))
+    cl <- factor(rep_len(1, n), levels = as.character(1:2))
     cl[c2] <- 2
     c1 <- (1:n)[-c2]
     a <- 2/sqrt(d)
@@ -319,8 +319,7 @@ hypercube <- function(d) {
   retval <- matrix(0, nrow=2^d, ncol=d)
   
   for(n in 1:d){
-    retval[,n] <- rep(c(rep(0, (2^d/2^n)), rep(1, (2^d/2^n))),
-                      length=2^d)
+    retval[,n] <- rep_len(c(rep(0, (2^d/2^n)), rep(1, (2^d/2^n))), 2^d)
   }
   retval
 }
@@ -332,7 +331,7 @@ mlbench.hypercube <- function(n=800, d=3, sides=rep(1,d), sd=0.1)
     m <- hypercube(d)
     n1 <- round(n/2^d)
     
-    sides <- rep(sides, length=d)
+    sides <- rep_len(sides, d)
     z <- NULL
     
     for(k in 1:nrow(m))
