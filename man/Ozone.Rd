@@ -29,10 +29,9 @@ The problem is to predict the daily maximum one-hour-average
 ozone reading (V4).
 }
 \source{
-    Leo Breiman, Department of Statistics, UC Berkeley.  Data used in
-    Leo Breiman and Jerome H. Friedman (1985), Estimating optimal
-    transformations for multiple regression and correlation, JASA, 80, pp.
-    580-598.
+  Data used in
+
+  \bibshow{Breiman+Friedman:1985}
 }
 \examples{
 data("Ozone", package = "mlbench")

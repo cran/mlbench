@@ -29,16 +29,14 @@ data("Ionosphere", package = "mlbench")
         \item Donor: Vince Sigillito (vgs@aplcen.apl.jhu.edu)
     }
     These data have been taken from the UCI Repository Of Machine
-    Learning Databases (Blake & Merz 1998) and were converted to R
-    format by Evgenia Dimitriadou in the late 1990s.
+    Learning Databases \bibcitep{Blake+Merz:1998} and were converted to
+    R format by Evgenia Dimitriadou in the late 1990s.
 
     The current version of the UC Irvine Machine Learning Repository
     Ionosphere data set is available from \doi{10.24432/C5W01B}.
 }
 \references{
-   Sigillito, V. G., Wing, S. P., Hutton, L. V., and Baker, K. B. (1989).
-      Classification of radar returns from the ionosphere using neural 
-      networks. Johns Hopkins APL Technical Digest, 10, 262-266.
+  \bibshow{Sigillito+Wing+Hutton:1989}
 
       They investigated using backprop and the perceptron training algorithm
       on this database.  Using the first 200 instances for training, which
@@ -60,11 +58,7 @@ data("Ionosphere", package = "mlbench")
       IB3 (Aha and Kibler, IJCAI-1989) attained 96.7\% (parameter settings:
       70\% and 80\% for acceptance and dropping respectively).
 
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.      
+  \bibshow{Blake+Merz:1998}
 }
 \keyword{datasets}
 \examples{

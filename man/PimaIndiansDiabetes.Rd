@@ -28,8 +28,8 @@ data("PimaIndiansDiabetes2", package = "mlbench")
   shows several physical impossibilities, e.g., blood pressure or body
   mass index of 0. In \code{PimaIndiansDiabetes2}, all zero values of
   \code{glucose}, \code{pressure}, \code{triceps}, \code{insulin} and
-  \code{mass} have been set to \code{NA}, see also Wahba et al (1995)
-  and Ripley (1996).
+  \code{mass} have been set to \code{NA}, see also
+  \bibcitet{Wahba+Gu+Wang:1995} and \bibcitet{Ripley:1996}. 
 }
 \source{
   \itemize{
@@ -40,27 +40,14 @@ data("PimaIndiansDiabetes2", package = "mlbench")
   }
     
   These data have been taken from the UCI Repository Of Machine Learning
-  Databases (Blake & Merz 1998) and were converted to R format by
+  Databases \bibcitep{Blake+Merz:1998} and were converted to R format by
   Friedrich Leisch in the late 1990s.
 
   The data no longer seems to be available from the UC Irvine Machine
   Learning Repository (now at \url{https://archive.ics.uci.edu/}).
 }
 \references{
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
-
-  Brian D. Ripley (1996), Pattern Recognition and Neural Networks,
-  Cambridge University Press, Cambridge.
-    
-  Grace Whaba, Chong Gu, Yuedong Wang, and Richard Chappell (1995),
-  Soft Classification a.k.a. Risk Estimation via Penalized Log
-  Likelihood and Smoothing Spline Analysis of Variance, in D. H.
-  Wolpert (1995), The Mathematics of Generalization, 331-359,
-  Addison-Wesley, Reading, MA.
+  \bibshow{Blake+Merz:1998, Ripley:1996, Wahba+Gu+Wang:1995}
 }
 \examples{
 data("PimaIndiansDiabetes", package = "mlbench")

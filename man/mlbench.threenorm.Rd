@@ -22,9 +22,7 @@ mlbench.threenorm(n, d=20)
 
 }
 \references{
-    Breiman, L. (1996). Bias, variance, and arcing classifiers.
-    Tech. Rep. 460, Statistics Department, University of California,
-    Berkeley, CA, USA.
+  \bibshow{Breiman:1996b}
 }
 \examples{
 p<-mlbench.threenorm(1000, d=2)

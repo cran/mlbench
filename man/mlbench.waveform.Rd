@@ -23,21 +23,13 @@
 
 \source{
   The original C code for the waveform generator was taken from the UCI
-  Repository of Machine Learning Databases (Blake & Merz 1998).
+  Repository of Machine Learning Databases \bibcitep{Blake+Merz:1998}.
   The C code was modified to use R's random number generator by
   Friedrich Leisch, who also wrote the R interface.
 }
   
 \references{
-  Breiman, L. (1996). Bias, variance, and arcing
-  classifiers. Tech. Rep. 460, Statistics Department, University of
-  California, Berkeley, CA, USA.
-
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.  
+  \bibshow{Breiman:1996b, Blake+Merz:1998}
 }
 
 \examples{

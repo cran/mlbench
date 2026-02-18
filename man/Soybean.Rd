@@ -65,17 +65,12 @@ data("Soybean", package = "mlbench")
   }
 \source{
   \itemize{
-    \item Source: R.S. Michalski and R.L. Chilausky "Learning by
-    Being Told and Learning from Examples: An Experimental
-    Comparison of the Two Methods of Knowledge Acquisition in the
-    Context of Developing an Expert System for Soybean Disease
-    Diagnosis", International Journal of Policy Analysis and
-    Information Systems, Vol. 4, No. 2, 1980.
+    \item Source: \bibcitet{Michalski+Chilausky:1980}
     \item Donor: Ming Tan & Jeff Schlimmer (Jeff.Schlimmer\%cs.cmu.edu)
   }
 
   These data have been taken from the UCI Repository Of Machine Learning
-  Databases (Blake & Merz 1998) and were converted to R format by
+  Databases \bibcitep{Blake+Merz:1998} and were converted to R format by
   Evgenia Dimitriadou in the late 1990s.
 
   The current version of the UC Irvine Machine Learning Repository
@@ -83,24 +78,16 @@ data("Soybean", package = "mlbench")
 
 }
 \references{
-    Tan, M., & Eshelman, L. (1988). Using weighted networks to represent
-    classification knowledge in noisy domains.  Proceedings of the Fifth
-    International Conference on Machine Learning (pp. 121-134). Ann Arbor,
-    Michigan: Morgan Kaufmann.
-    -- IWN recorded a 97.1\% classification accuracy 
-    -- 290 training and 340 test instances
-	    
-    Fisher,D.H. & Schlimmer,J.C. (1988). Concept Simplification and
-    Predictive Accuracy. Proceedings of the Fifth
-    International Conference on Machine Learning (pp. 22-28). Ann Arbor,
-    Michigan: Morgan Kaufmann.
-    -- Notes why this database is highly predictable
+  \bibshow{Michalski+Chilausky:1980}
 
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.    
+  \bibshow{Tan+Eshelman:1988}\cr
+  -- IWN recorded a 97.1\% classification accuracy \cr
+  -- 290 training and 340 test instances
+
+  \bibshow{Fisher+Schlimmer:1988}\cr
+  -- Notes why this database is highly predictable
+
+  \bibshow{Blake+Merz:1998}
 }
 \keyword{datasets}
 \examples{

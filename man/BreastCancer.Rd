@@ -40,7 +40,7 @@ data("BreastCancer", package = "mlbench")
       }
 
     These data have been taken from the UCI Repository Of Machine Learning
-    Databases (Blake & Merz 1998) and were converted to R format by
+    Databases \bibcitep{Blake+Merz:1998} and were converted to R format by
     Evgenia Dimitriadou in the late 1990s.
 
     The current version of the UC Irvine Machine Learning Repository
@@ -48,10 +48,7 @@ data("BreastCancer", package = "mlbench")
     \doi{10.24432/C5HP4Z}.
 }
 \references{   
-   1. Wolberg,W.H., and Mangasarian,O.L. (1990). Multisurface method of 
-      pattern separation for medical diagnosis applied to breast cytology. In
-      Proceedings of the National Academy of Sciences, 87,
-      9193-9196.\cr
+   1. \bibshow{Wolberg+Mangasarian:1990}\cr
       - Size of data set: only 369 instances (at that point in time)\cr
       - Collected classification results: 1 trial only\cr
       - Two pairs of parallel hyperplanes were found to be consistent with
@@ -61,10 +58,7 @@ data("BreastCancer", package = "mlbench")
          67\% of data\cr
          - Accuracy on remaining 33\% of dataset: 95.9\%
 
-   2. Zhang,J. (1992). Selecting typical instances in instance-based
-      learning.  In Proceedings of the Ninth International Machine
-      Learning Conference (pp. 470-479).  Aberdeen, Scotland: Morgan
-      Kaufmann.\cr
+   2. \bibshow{Zhang:1992}\cr
       - Size of data set: only 369 instances (at that point in time)\cr
       - Applied 4 instance-based learning algorithms\cr
       - Collected classification results averaged over 10 trials\cr
@@ -75,11 +69,8 @@ data("BreastCancer", package = "mlbench")
          - Using only typical instances: 92.2\% (storing only 23.1 instances)\cr
          - trained on 200 instances, tested on the other 169
 
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
+
+  \bibshow{Blake+Merz:1998}
 }
 \keyword{datasets}
 \examples{

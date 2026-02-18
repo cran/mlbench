@@ -55,25 +55,10 @@ nominal and a target class.}
     and were converted to R format by Evgenia Dimitriadou.
 }
 \references{
-     machine learning:\cr
-       	-- M. O. Noordewier and G. G. Towell and J. W. Shavlik, 1991; 
-           "Training Knowledge-Based Neural Networks to Recognize Genes in 
-           DNA Sequences".  Advances in Neural Information Processing Systems,
-           volume 3, Morgan Kaufmann.
-
-	-- G. G. Towell and J. W. Shavlik and M. W. Craven, 1991;  
-           "Constructive Induction in Knowledge-Based Neural Networks",  
-           In Proceedings of the Eighth International Machine Learning
-	   Workshop, Morgan Kaufmann.
-
-        -- G. G. Towell, 1991;
-           "Symbolic Knowledge and Neural Networks: Insertion, Refinement, and
-           Extraction", PhD Thesis, University of Wisconsin - Madison.
-
-        -- G. G. Towell and J. W. Shavlik, 1992;
-           "Interpretation of Artificial Neural Networks: Mapping 
-           Knowledge-based Neural Networks into Rules", In Advances in Neural
-           Information Processing Systems, volume 4, Morgan Kaufmann.  
+  \bibshow{Noordewier+Towell+Shavlik:1990,
+    Towell:1991,
+    Towell+Craven+Shavlik:1991,
+    Towell+Shavlik:1991}
 }
 \keyword{datasets}
 \examples{

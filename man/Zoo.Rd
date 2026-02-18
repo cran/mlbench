@@ -19,21 +19,18 @@ data("Zoo", package = "mlbench")
 \details{
   Ask the original donor of the data why \emph{girl} is an animal.
 }
-\references{
-  Blake, C.L. & Merz, C.J. (1998).
-  UCI Repository of Machine Learning Databases. Irvine, CA:
-  University of California, Irvine, Department of Information and Computer
-  Science.
-  Formerly available from \samp{http://www.ics.uci.edu/~mlearn/MLRepository.html}.
-}  
 \source{
   The original data have been donated by Richard S. Forsyth to the UCI
-  Repository of Machine Learning Databases (Blake & Merz 1998) and were
-  converted to R format by Friedrich Leisch and Evgenia Dimitriadou in the late 1990s.
+  Repository of Machine Learning Databases \bibcitep{Blake+Merz:1998}
+  and were converted to R format by Friedrich Leisch and Evgenia
+  Dimitriadou in the late 1990s. 
 
   The current version of the UC Irvine Machine Learning Repository Zoo
   data set is available from \doi{10.24432/C5R59V}. 
 }
+\references{
+  \bibshow{Blake+Merz:1998}
+}  
 \keyword{datasets}
 \examples{
 data("Zoo", package = "mlbench")

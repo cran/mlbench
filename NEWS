@@ -1,10 +1,22 @@
+Changes in Version 2.1-7
+
+  o Generate bibliographic citations and references from bibentries.
+    Have full bibliographic information for all references.
+
+Changes in Version 2.1-6
+
+  o Improve URLs.
+
+
 Changes in Version 2.1-5
 
   o Clarify source information: the old UCI URLs no longer work.
 
+
 Changes in Version 2.1-4
 
   o fixed warnings in waveform.c
+
 
 Changes in Version 2.1-2
 
