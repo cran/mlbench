@@ -1,10 +1,10 @@
-807c5d6a58ec17653686eb1637c50517 *DESCRIPTION
+e5bee3c8e2c8c64e31f8acf7665a939a *DESCRIPTION
 e72aebb01ccf74b82af39ac7a64c139b *NAMESPACE
-aa07c36354ed931081026d529d8feeab *NEWS
+a14bfbc5a96c2e51b418c7d74c65c3f4 *NEWS
 2734c030e41f8019f8a2339b11d041f5 *R/mlbench-class.R
 1bee7ea370a599f2609f58254396e178 *R/mlbench-regression.R
 ae147758961adbbc2788fb79f64c1dc5 *README
-9572daa17d2a1077f6a8f094582f0bb8 *build/partial.rdb
+42dffd6291879698c7d3ce61146c1743 *build/partial.rdb
 13a23a6075d97bb5f71984d3460cae00 *data/BostonHousing.rda
 4810c1ed08a9837d87c338c16799191d *data/BostonHousing2.rda
 d40f70ad40835c30193c1866cea35b85 *data/BreastCancer.rda
